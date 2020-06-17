@@ -1,0 +1,212 @@
+body {
+  background-color: #333D49;
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+}
+
+.statement {
+  color: white;
+  font-size: 1.2rem;
+  z-index: 1;
+  position: relative;
+  margin-top: 40px;
+}
+
+.name {
+  color: #62DAFE;
+}
+
+.motherBoard {
+  margin-top: 30vh;
+}
+
+.socket {
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: -300px;
+  margin-left: 410px;
+  position: absolute;
+}
+
+.projects {
+  position: absolute;
+  margin-top: -340px;
+  margin-left: 460px;
+  font-size: 2rem;
+  opacity: 0;
+  -webkit-animation-name: projectshow;
+  -webkit-animation-duration: 4s;
+  animation-name: projectshow;
+  animation-duration: 4s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+}
+
+.chip {
+  text-align: center;
+  height:250px;
+  width: 250px;
+  margin-left:41.5vw;
+  border: solid 10px rgb(37, 37, 37);
+  background-color: rgb(22, 22, 22);
+  border-radius: 5%;
+}
+
+.line1 {
+  border: rgba(165, 165, 165, 0.616) solid 5px;
+  margin-top: -125px;
+  margin-left: 260px;
+  position: absolute;
+  width:150px;
+}
+
+.line1turn {
+  border: rgba(165, 165, 165, 0.616) solid 5px;
+  margin-top: -275px;
+  margin-left: 420px;
+  position: absolute;
+  height:150px;
+}
+
+.databit1 {
+  border: solid 10px #62DAFE;
+  margin-top: -130px;
+  margin-left: 260px;
+  position: absolute;
+  -webkit-animation-name: datastream;
+  -webkit-animation-duration: 3s;
+  animation-name: datastream;
+  animation-duration: 3s;
+  /* animation-iteration-count: infinite; */
+  background-color: rgb(48, 48, 48);
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+}
+
+.line2 {
+  border: rgba(165, 165, 165, 0.616) solid 5px;
+  margin-top: -75px;
+  margin-left: 260px;
+  position: absolute;
+  width:130px;
+}
+
+.line2turn {
+  border: rgba(165, 165, 165, 0.616) solid 5px;
+  margin-top: -75px;
+  margin-left: 400px;
+  position: absolute;
+  height:170px;
+  z-index: 0;
+}
+
+.line2Aturn {
+  border: rgba(165, 165, 165, 0.616) solid 5px;
+  margin-top: 65px;
+  margin-left: 410px;
+  position: absolute;
+  width:100px;
+  z-index: 0;
+}
+
+.line2Bturn {
+  border: rgba(165, 165, 165, 0.616) solid 5px;
+  margin-top: 105px;
+  margin-left: 300px;
+  position: absolute;
+  width:100px;
+  z-index: 0;
+}
+
+.socket2A{
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: 55px;
+  margin-left: 520px;
+  position: absolute;
+  background-color: white;
+}
+
+.socket2B{
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: 105px;
+  margin-left: 300px;
+  position: absolute;
+  background-color: white;
+}
+
+.connector{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: 260px;
+  width:20px;
+}
+
+.connector2{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: 260px;
+  margin-top: -40px;
+  width:20px;
+}
+
+@-webkit-keyframes datastream {
+
+  50% {
+    margin-top: -130px;
+    margin-left: 415px;
+  }
+
+  100% {
+    margin-top: -295px;
+    margin-left: 415px;
+  }
+
+}
+
+@keyframes datastream {
+
+  50% {
+    margin-top: -130px;
+    margin-left: 415px;
+  }
+
+  100% {
+    margin-top: -295px;
+    margin-left: 415px;
+  }
+
+}
+
+@-webkit-keyframes projectshow {
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+
+}
+
+@keyframes projectshow {
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+
+}
+

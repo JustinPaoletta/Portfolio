@@ -1,7 +1,8 @@
 body {
-  background-color: #333D49;
+  background-image: linear-gradient(#88909bce, rgb(185, 185, 185));
   text-align: center;
   font-family: 'Russo One', sans-serif;
+  height:70vh;
 }
 
 .statement {
@@ -14,10 +15,102 @@ body {
 
 .name {
   color: #62DAFE;
+  font-size: 1.6rem;
 }
 
 .motherBoard {
   margin-top: 30vh;
+  margin-left: -30px;
+}
+
+.wire {
+  position: absolute;
+  height: 190px;
+  width: 2px;
+  background-color: rgb(201, 201, 201);
+  margin-left: 40px;
+  margin-top: -200px;
+}
+
+.wire2 {
+  position: absolute;
+  height: 190px;
+  width: 2px;
+  background-color: rgb(201, 201, 201);
+  margin-left: 60px;
+  margin-top: -200px;
+}
+
+.wire3 {
+  position: absolute;
+  height: 190px;
+  width: 2px;
+  background-color: rgb(201, 201, 201);
+  margin-left: 80px;
+  margin-top: -200px;
+}
+
+.wire4 {
+  position: absolute;
+  height: 190px;
+  width: 2px;
+  background-color: rgb(201, 201, 201);
+  margin-left: 125px;
+  margin-top: 260px;
+}
+
+.wire5 {
+  position: absolute;
+  height: 190px;
+  width: 2px;
+  background-color: rgb(201, 201, 201);
+  margin-left: 165px;
+  margin-top: 260px;
+}
+
+.tip {
+  width:3px;
+  height:4px;
+  background-color: blue;
+  position: absolute;
+  margin-left: 39px;
+  margin-top: -202px;
+}
+
+.tip2 {
+  width:4px;
+  height:3px;
+  background-color: yellow;
+  position: absolute;
+  margin-left: 59px;
+  margin-top: -202px;
+}
+
+.tip3 {
+  width:3px;
+  height:4px;
+  background-color: blue;
+  position: absolute;
+  margin-left: 79px;
+  margin-top: -202px;
+}
+
+.tip4 {
+  width:3px;
+  height:4px;
+  background-color: blue;
+  position: absolute;
+  margin-left: 124px;
+  margin-top: 451px;
+}
+
+.tip5 {
+  width:4px;
+  height:3px;
+  background-color: yellow;
+  position: absolute;
+  margin-left: 164px;
+  margin-top: 451px;
 }
 
 .socket {
@@ -29,11 +122,47 @@ body {
   position: absolute;
 }
 
+.socket1A {
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: -215px;
+  margin-left: 330px;
+  position: absolute;
+  background-color: white;
+  -webkit-animation-name: colorchange;
+  -webkit-animation-duration: 30s;
+  animation-name: colorchange;
+  animation-duration: 30s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+}
+
+.socket1B {
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: -195px;
+  margin-left: 490px;
+  position: absolute;
+  background-color: white;
+  -webkit-animation-name: colorchange2E;
+  -webkit-animation-duration: 30s;
+  animation-name: colorchange2E;
+  animation-duration: 30s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+}
+
 .projects {
   position: absolute;
-  margin-top: -340px;
-  margin-left: 460px;
-  font-size: 2rem;
+  margin-top: -400px;
+  margin-left: 330px;
+  font-size: 2.5rem;
   opacity: 0;
   -webkit-animation-name: projectshow;
   -webkit-animation-duration: 4s;
@@ -56,7 +185,7 @@ body {
 }
 
 .line1 {
-  border: rgba(165, 165, 165, 0.616) solid 5px;
+  border: gray solid 5px;
   margin-top: -125px;
   margin-left: 260px;
   position: absolute;
@@ -64,14 +193,31 @@ body {
 }
 
 .line1turn {
-  border: rgba(165, 165, 165, 0.616) solid 5px;
+  border: gray solid 5px;
   margin-top: -275px;
   margin-left: 420px;
   position: absolute;
   height:150px;
 }
 
+.line1Aturn {
+  border: gray solid 5px;
+  margin-top: -185px;
+  margin-left: 340px;
+  position: absolute;
+  height:50px;
+}
+
+.line1Bturn {
+  border: gray solid 5px;
+  margin-top: -185px;
+  margin-left: 430px;
+  position: absolute;
+  width:50px;
+}
+
 .databit1 {
+  z-index:1;
   border: solid 10px #62DAFE;
   margin-top: -130px;
   margin-left: 260px;
@@ -80,7 +226,6 @@ body {
   -webkit-animation-duration: 3s;
   animation-name: datastream;
   animation-duration: 3s;
-  /* animation-iteration-count: infinite; */
   background-color: rgb(48, 48, 48);
   animation-fill-mode:forwards;
   -webkit-animation-fill-mode: forwards;
@@ -89,7 +234,7 @@ body {
 }
 
 .line2 {
-  border: rgba(165, 165, 165, 0.616) solid 5px;
+  border: gray solid 5px;
   margin-top: -75px;
   margin-left: 260px;
   position: absolute;
@@ -97,30 +242,69 @@ body {
 }
 
 .line2turn {
-  border: rgba(165, 165, 165, 0.616) solid 5px;
+  border: gray solid 5px;
   margin-top: -75px;
   margin-left: 400px;
   position: absolute;
   height:170px;
-  z-index: 0;
+
 }
 
 .line2Aturn {
-  border: rgba(165, 165, 165, 0.616) solid 5px;
+  border: gray solid 5px;
   margin-top: 65px;
   margin-left: 410px;
   position: absolute;
   width:100px;
-  z-index: 0;
+
 }
 
 .line2Bturn {
-  border: rgba(165, 165, 165, 0.616) solid 5px;
+  border: gray solid 5px;
   margin-top: 105px;
   margin-left: 300px;
   position: absolute;
   width:100px;
-  z-index: 0;
+}
+
+.line2Cturn {
+  border: gray solid 5px;
+  margin-top: 75px;
+  margin-left: 460px;
+  position: absolute;
+  height:80px;
+}
+
+.databit4 {
+  z-index: 1;
+  border: solid 10px #62DAFE;
+  margin-top: -81px;
+  margin-left: 260px;
+  position: absolute;
+  -webkit-animation-name: datastream4;
+  -webkit-animation-duration: 4.5s;
+  animation-name: datastream4;
+  animation-duration: 4.5s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+}
+
+.contact {
+  position: absolute;
+  margin-top: 175px;
+  margin-left: 290px;
+  font-size: 2.5rem;
+  opacity: 0;
+  -webkit-animation-name: contactshow;
+  -webkit-animation-duration: 6s;
+  animation-name: contactshow;
+  animation-duration: 6s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
 }
 
 .socket2A{
@@ -131,6 +315,14 @@ body {
   margin-left: 520px;
   position: absolute;
   background-color: white;
+  -webkit-animation-name: colorchange2C;
+  -webkit-animation-duration: 30s;
+  animation-name: colorchange2C;
+  animation-duration: 30s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
 }
 
 .socket2B{
@@ -141,6 +333,238 @@ body {
   margin-left: 300px;
   position: absolute;
   background-color: white;
+  -webkit-animation-name: colorchange2D;
+  -webkit-animation-duration: 30s;
+  animation-name: colorchange2D;
+  animation-duration: 30s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+}
+
+.socket2C{
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: 165px;
+  margin-left: 450px;
+  position: absolute;
+}
+
+
+.line3 {
+  border: gray solid 5px;
+  margin-top: -75px;
+  margin-left: -190px;
+  position: absolute;
+  width:170px;
+}
+
+.line3turn {
+  border: gray solid 5px;
+  margin-top: -255px;
+  margin-left: -100px;
+  position: absolute;
+  height:170px;
+
+}
+
+.line3Aturn {
+  border: gray solid 5px;
+  margin-top: -265px;
+  margin-left: -200px;
+  position: absolute;
+  width:100px;
+
+}
+
+.socket3 {
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: -275px;
+  margin-left: -230px;
+  position: absolute;
+}
+
+.socket3A{
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: -85px;
+  margin-left: -220px;
+  position: absolute;
+  background-color: white;
+  -webkit-animation-name: colorchange2B;
+  -webkit-animation-duration: 30s;
+  animation-name: colorchange2B;
+  animation-duration: 30s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+}
+
+.databit2 {
+  border: solid 10px #62DAFE;
+  margin-top: -80px;
+  margin-left: -30px;
+  position: absolute;
+  -webkit-animation-name: datastream2;
+  -webkit-animation-duration: 2s;
+  animation-name: datastream2;
+  animation-duration: 2s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+}
+
+.about {
+  position: absolute;
+  margin-top: -390px;
+  margin-left: -270px;
+  font-size: 2.5rem;
+  opacity: 0;
+  -webkit-animation-name: aboutshow;
+  -webkit-animation-duration: 3s;
+  animation-name: aboutshow;
+  animation-duration: 3s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+}
+
+.line4 {
+  border: gray solid 5px;
+  margin-top: 45px;
+  margin-left: 20px;
+  position: absolute;
+  height:56px;
+
+}
+
+.line4turn {
+  border: gray solid 5px;
+  margin-top: 101px;
+  margin-left: -270px;
+  position: absolute;
+  width:280px;
+
+}
+
+.line4Aturn {
+  border: gray solid 5px;
+  margin-top: 101px;
+  margin-left: -280px;
+  position: absolute;
+  height:80px;
+
+}
+
+.line4Bturn {
+  border: gray solid 5px;
+  margin-top: 181px;
+  margin-left: -270px;
+  position: absolute;
+  width:130px;
+}
+
+.line4Cturn {
+  border: gray solid 5px;
+  margin-top: 31px;
+  margin-left: -111px;
+  position: absolute;
+  height:60px;
+}
+
+.line4Dturn {
+  border: gray solid 5px;
+  margin-top: 51px;
+  margin-left: -191px;
+  position: absolute;
+  height:40px;
+}
+
+.socket4A{
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: 171px;
+  margin-left: -130px;
+  position: absolute;
+}
+
+.socket4C{
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: 0px;
+  margin-left: -120px;
+  position: absolute;
+  background-color: white;
+  -webkit-animation-name: colorchange;
+  -webkit-animation-duration: 30s;
+  animation-name: colorchange;
+  animation-duration: 30s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+}
+
+.socket4D{
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: 30px;
+  margin-left: -200px;
+  position: absolute;
+  background-color: white;
+  -webkit-animation-name: colorchange2;
+  -webkit-animation-duration: 30s;
+  animation-name: colorchange2;
+  animation-duration: 30s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+}
+
+
+.databit3 {
+  border: solid 10px #62DAFE;
+  margin-top: 51px;
+  margin-left: 15px;
+  position: absolute;
+  -webkit-animation-name: datastream3;
+  -webkit-animation-duration: 6s;
+  animation-name: datastream3;
+  animation-duration: 6s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+  z-index: 1;
+}
+
+
+.blog {
+  position: absolute;
+  margin-top: 185px;
+  margin-left: -210px;
+  font-size: 2.5rem;
+  opacity: 0;
+  -webkit-animation-name: blogshow;
+  -webkit-animation-duration: 8s;
+  animation-name: blogshow;
+  animation-duration: 8s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
 }
 
 .connector{
@@ -156,6 +580,86 @@ body {
   margin-left: 260px;
   margin-top: -40px;
   width:20px;
+}
+
+.connector3{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: 180px;
+  height:20px;
+  margin-top: 45px;
+}
+
+.connector4{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: 140px;
+  margin-top: 45px;
+  height:20px;
+}
+
+.connector5{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: 100px;
+  height:20px;
+  margin-top: 45px;
+}
+
+.connector6{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: 60px;
+  margin-top: 45px;
+  height:20px;
+}
+
+.connector7{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: -40px;
+  width:20px;
+  margin-top: -180px;
+}
+
+.connector8{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: -40px;
+  margin-top: -140px;
+  width:20px;
+}
+
+.connector9{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 0px;
+  width:20px;
+}
+
+.connector10{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: 120px;
+  margin-top: -256px;
+  height:20px;
+}
+
+.connector11{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: 160px;
+  margin-top: -256px;
+  height:20px;
+}
+
+.connector12{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: 200px;
+  margin-top: -256px;
+  height:20px;
 }
 
 @-webkit-keyframes datastream {
@@ -210,3 +714,875 @@ body {
 
 }
 
+@-webkit-keyframes datastream2 {
+
+  30% {
+    margin-top: -80px;
+    margin-left: -105px;
+  }
+
+  50% {
+    margin-top: -270px;
+    margin-left: -105px;
+  }
+
+  100% {
+    margin-top: -270px;
+    margin-left: -225px;
+  }
+
+}
+
+@keyframes datastream2 {
+
+  30% {
+    margin-top: -80px;
+    margin-left: -105px;
+  }
+
+  50% {
+    margin-top: -270px;
+    margin-left: -105px;
+  }
+
+  100% {
+    margin-top: -270px;
+    margin-left: -225px;
+  }
+
+}
+
+
+@-webkit-keyframes aboutshow {
+
+  66% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+
+}
+
+@keyframes aboutshow {
+
+  66% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+
+}
+
+
+
+@-webkit-keyframes datastream3 {
+
+  10% {
+    margin-top: 96px;
+    margin-left: 15px;
+  }
+
+  60% {
+    margin-top: 96px;
+    margin-left: -285px;
+  }
+
+  75% {
+    margin-top: 176px;
+    margin-left: -285px;
+  }
+
+  100% {
+    margin-top: 176px;
+    margin-left: -125px;
+  }
+
+}
+
+@keyframes datastream3 {
+
+  10% {
+    margin-top: 96px;
+    margin-left: 15px;
+  }
+
+  60% {
+    margin-top: 96px;
+    margin-left: -285px;
+  }
+
+  75% {
+    margin-top: 176px;
+    margin-left: -285px;
+  }
+
+  100% {
+    margin-top: 176px;
+    margin-left: -125px;
+  }
+
+}
+
+
+@-webkit-keyframes blogshow {
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+
+}
+
+@keyframes blogshow {
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+
+}
+
+
+@-webkit-keyframes datastream4 {
+
+  10% {
+    margin-top: -81px;
+    margin-left: 395px;
+  }
+
+  60% {
+    margin-top: 61px;
+    margin-left: 395px;
+  }
+
+  75% {
+    margin-top: 61px;
+    margin-left: 455px;
+  }
+
+  100% {
+    margin-top: 170px;
+    margin-left: 455px;
+  }
+
+}
+
+@keyframes datastream4 {
+
+  10% {
+    margin-top: -81px;
+    margin-left: 395px;
+  }
+
+  60% {
+    margin-top: 61px;
+    margin-left: 395px;
+  }
+
+  75% {
+    margin-top: 61px;
+    margin-left: 455px;
+  }
+
+  100% {
+    margin-top: 170px;
+    margin-left: 455px;
+  }
+
+}
+
+
+@-webkit-keyframes contactshow {
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+
+}
+
+@keyframes contactshow {
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+
+}
+
+
+@-webkit-keyframes colorchange {
+
+  23% {
+    background-color: white;
+  }
+
+  28% {
+    background-color: yellow;
+  }
+
+  33% {
+    background-color: white;
+  }
+
+  38% {
+    background-color: yellow;
+  }
+
+  43% {
+    background-color: white;
+  }
+
+  48% {
+    background-color: yellow;
+  }
+
+  53% {
+    background-color: white;
+  }
+
+  58% {
+    background-color: yellow;
+  }
+
+  63% {
+    background-color: white;
+  }
+
+  68% {
+    background-color: yellow;
+  }
+
+  73% {
+    background-color: white;
+  }
+
+  78% {
+    background-color: yellow;
+  }
+
+  83% {
+    background-color: white;
+  }
+
+  88% {
+    background-color: yellow;
+  }
+
+  93% {
+    background-color: white;
+  }
+
+}
+
+@keyframes colorchange {
+
+  23% {
+    background-color: white;
+  }
+
+  28% {
+    background-color: yellow;
+  }
+
+  33% {
+    background-color: white;
+  }
+
+  38% {
+    background-color: yellow;
+  }
+
+  43% {
+    background-color: white;
+  }
+
+  48% {
+    background-color: yellow;
+  }
+
+  53% {
+    background-color: white;
+  }
+
+  58% {
+    background-color: yellow;
+  }
+
+  63% {
+    background-color: white;
+  }
+
+  68% {
+    background-color: yellow;
+  }
+
+  73% {
+    background-color: white;
+  }
+
+  78% {
+    background-color: yellow;
+  }
+
+  83% {
+    background-color: white;
+  }
+
+  88% {
+    background-color: yellow;
+  }
+
+  93% {
+    background-color: white;
+  }
+
+}
+
+
+@-webkit-keyframes colorchange2 {
+
+  27% {
+    background-color: white;
+  }
+
+  28% {
+    background-color: blue;
+  }
+
+  29% {
+    background-color: blue;
+  }
+
+  30% {
+    background-color: white;
+  }
+
+  53% {
+    background-color: white;
+  }
+
+  54% {
+    background-color: blue;
+  }
+
+  55% {
+    background-color: blue;
+  }
+
+  56% {
+    background-color: white;
+  }
+
+  78% {
+    background-color: white;
+  }
+
+  79% {
+    background-color: blue;
+  }
+
+  80% {
+    background-color: blue;
+  }
+
+  81% {
+    background-color: white;
+  }
+
+}
+
+@keyframes colorchange2 {
+
+  27% {
+    background-color: white;
+  }
+
+  28% {
+    background-color: blue;
+  }
+
+  29% {
+    background-color: blue;
+  }
+
+  30% {
+    background-color: white;
+  }
+
+  53% {
+    background-color: white;
+  }
+
+  54% {
+    background-color: blue;
+  }
+
+  55% {
+    background-color: blue;
+  }
+
+  56% {
+    background-color: white;
+  }
+
+  78% {
+    background-color: white;
+  }
+
+  79% {
+    background-color: blue;
+  }
+
+  80% {
+    background-color: blue;
+  }
+
+  81% {
+    background-color: white;
+  }
+
+
+}
+
+
+
+@-webkit-keyframes colorchange2B {
+
+  37% {
+    background-color: white;
+  }
+
+  38% {
+    background-color: blue;
+  }
+
+  39% {
+    background-color: blue;
+  }
+
+  40% {
+    background-color: white;
+  }
+
+  63% {
+    background-color: white;
+  }
+
+  64% {
+    background-color: blue;
+  }
+
+  65% {
+    background-color: blue;
+  }
+
+  66% {
+    background-color: white;
+  }
+
+  88% {
+    background-color: white;
+  }
+
+  89% {
+    background-color: blue;
+  }
+
+  90% {
+    background-color: blue;
+  }
+
+  91% {
+    background-color: white;
+  }
+
+}
+
+@keyframes colorchange2B {
+
+  37% {
+    background-color: white;
+  }
+
+  38% {
+    background-color: blue;
+  }
+
+  39% {
+    background-color: blue;
+  }
+
+  40% {
+    background-color: white;
+  }
+
+  63% {
+    background-color: white;
+  }
+
+  64% {
+    background-color: blue;
+  }
+
+  65% {
+    background-color: blue;
+  }
+
+  66% {
+    background-color: white;
+  }
+
+  88% {
+    background-color: white;
+  }
+
+  89% {
+    background-color: blue;
+  }
+
+  90% {
+    background-color: blue;
+  }
+
+  91% {
+    background-color: white;
+  }
+
+
+}
+
+
+
+@-webkit-keyframes colorchange2C {
+
+  32% {
+    background-color: white;
+  }
+
+  33% {
+    background-color: blue;
+  }
+
+  34% {
+    background-color: blue;
+  }
+
+  35% {
+    background-color: white;
+  }
+
+  58% {
+    background-color: white;
+  }
+
+  59% {
+    background-color: blue;
+  }
+
+  60% {
+    background-color: blue;
+  }
+
+  61% {
+    background-color: white;
+  }
+
+  83% {
+    background-color: white;
+  }
+
+  84% {
+    background-color: blue;
+  }
+
+  85% {
+    background-color: blue;
+  }
+
+  86% {
+    background-color: white;
+  }
+
+}
+
+@keyframes colorchange2C {
+
+  32% {
+    background-color: white;
+  }
+
+  33% {
+    background-color: blue;
+  }
+
+  34% {
+    background-color: blue;
+  }
+
+  35% {
+    background-color: white;
+  }
+
+  58% {
+    background-color: white;
+  }
+
+  59% {
+    background-color: blue;
+  }
+
+  60% {
+    background-color: blue;
+  }
+
+  61% {
+    background-color: white;
+  }
+
+  83% {
+    background-color: white;
+  }
+
+  84% {
+    background-color: blue;
+  }
+
+  85% {
+    background-color: blue;
+  }
+
+  86% {
+    background-color: white;
+  }
+
+
+}
+
+@-webkit-keyframes colorchange2D {
+
+  30% {
+    background-color: white;
+  }
+
+  31% {
+    background-color: blue;
+  }
+
+  32% {
+    background-color: blue;
+  }
+
+  33% {
+    background-color: white;
+  }
+
+  55% {
+    background-color: white;
+  }
+
+  56% {
+    background-color: blue;
+  }
+
+  57% {
+    background-color: blue;
+  }
+
+  58% {
+    background-color: white;
+  }
+
+  80% {
+    background-color: white;
+  }
+
+  81% {
+    background-color: blue;
+  }
+
+  82% {
+    background-color: blue;
+  }
+
+  83% {
+    background-color: white;
+  }
+
+}
+
+@keyframes colorchange2D {
+
+  30% {
+    background-color: white;
+  }
+
+  31% {
+    background-color: blue;
+  }
+
+  32% {
+    background-color: blue;
+  }
+
+  33% {
+    background-color: white;
+  }
+
+  55% {
+    background-color: white;
+  }
+
+  56% {
+    background-color: blue;
+  }
+
+  57% {
+    background-color: blue;
+  }
+
+  58% {
+    background-color: white;
+  }
+
+  80% {
+    background-color: white;
+  }
+
+  81% {
+    background-color: blue;
+  }
+
+  82% {
+    background-color: blue;
+  }
+
+  83% {
+    background-color: white;
+  }
+
+
+}
+
+
+
+
+@-webkit-keyframes colorchange2E {
+
+  40% {
+    background-color: white;
+  }
+
+  41% {
+    background-color: blue;
+  }
+
+  42% {
+    background-color: blue;
+  }
+
+  43% {
+    background-color: white;
+  }
+
+  66% {
+    background-color: white;
+  }
+
+  67% {
+    background-color: blue;
+  }
+
+  68% {
+    background-color: blue;
+  }
+
+  69% {
+    background-color: white;
+  }
+
+  91% {
+    background-color: white;
+  }
+
+  92% {
+    background-color: blue;
+  }
+
+  93% {
+    background-color: blue;
+  }
+
+  94% {
+    background-color: white;
+  }
+
+}
+
+@keyframes colorchange2E {
+
+  40% {
+    background-color: white;
+  }
+
+  41% {
+    background-color: blue;
+  }
+
+  42% {
+    background-color: blue;
+  }
+
+  43% {
+    background-color: white;
+  }
+
+  66% {
+    background-color: white;
+  }
+
+  67% {
+    background-color: blue;
+  }
+
+  68% {
+    background-color: blue;
+  }
+
+  69% {
+    background-color: white;
+  }
+
+  91% {
+    background-color: white;
+  }
+
+  92% {
+    background-color: blue;
+  }
+
+  93% {
+    background-color: blue;
+  }
+
+  94% {
+    background-color: white;
+  }
+
+}

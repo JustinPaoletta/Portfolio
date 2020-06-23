@@ -2,6 +2,6 @@
 Software Engineering Portfolio For Justin Paoletta
 
 ## Landing Page
-![](landingpage.gif)
+![](./public/landingpage.gif)
 
 Portfolio is currently under production

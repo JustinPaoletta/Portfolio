@@ -8,29 +8,31 @@ import About from './about.jsx';
 import Blog from './blog.jsx';
  
 class App extends React.Component {
- constructor(props) {
-   super(props)
-   this.state = {
-   }
- }
+   constructor(props) {
+     super(props)
+     this.state = {
 
- render() {
+     }
+   }
 
-   return(
-     <div>
-      <div className="motherBoard">
-        <div className="chip">
-          <WiresConnectorsTips />
-          <Statement />
-          <Projects />
-          <Contact />
-          <About />
-          <Blog />
-          </div>
-       </div>
-     </div>
-   )
- }
+   render() {
+
+     return(
+       <div>
+        <div className="motherBoard">
+          <div className="chip">
+            <WiresConnectorsTips />
+            <Statement />
+            <Projects />
+            <Contact />
+            <About />
+            <Blog />
+            </div>
+        </div>
+      </div>
+     )
+
+   }
 }
 
 export default App;

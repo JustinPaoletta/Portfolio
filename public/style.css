@@ -2,12 +2,11 @@ body {
   background-color:#59626B;
   text-align: center;
   font-family: 'Russo One', sans-serif;
-  height:70vh;
+  height:100%;
 }
 
 .motherBoard {
-  margin-top: 30vh;
-  margin-left: 0px;
+  margin-top: 280px;
 }
 
 .chip {
@@ -334,6 +333,7 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-timing-function:linear;
   -webkit-animation-timing-function:linear;
+  cursor:pointer;
 }
 
 /* CONTACT BRANCH */
@@ -443,7 +443,7 @@ body {
 .contact {
   position: absolute;
   margin-top: 185px;
-  margin-left: 350px;
+  margin-left: 380px;
   font-size: 2.5rem;
   opacity: 0;
   -webkit-animation-name: contactshow;
@@ -454,6 +454,7 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-timing-function:linear;
   -webkit-animation-timing-function:linear;
+  cursor:pointer;
 }
 
 /* ABOUT BRANCH */
@@ -529,7 +530,7 @@ body {
 .about {
   position: absolute;
   margin-top: -400px;
-  margin-left: -270px;
+  margin-left: -310px;
   font-size: 2.5rem;
   opacity: 0;
   -webkit-animation-name: aboutshow;
@@ -540,6 +541,7 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-timing-function:linear;
   -webkit-animation-timing-function:linear;
+  cursor:pointer;
 }
 
 /* BLOG BRANCH */
@@ -659,7 +661,7 @@ body {
 .blog {
   position: absolute;
   margin-top: 185px;
-  margin-left: -270px;
+  margin-left: -310px;
   font-size: 2.5rem;
   opacity: 0;
   -webkit-animation-name: blogshow;
@@ -670,6 +672,7 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-timing-function:linear;
   -webkit-animation-timing-function:linear;
+  cursor:pointer;
 }
 
 /* ANIMATE THE DATABITS */
@@ -1576,6 +1579,72 @@ body {
 
   94% {
     background-color: white;
+  }
+
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+
+  .motherBoard {
+    margin-top: 400px;
+  }
+
+  .chip {
+    transform: scale(.9);
+    margin-left: 35vw;
+  }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 1) {
+
+  .chip {
+    transform: scale(.7);
+    margin-left: 32vw;
+    margin-top: 0px;
+  }
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 450px) and (-webkit-min-device-pixel-ratio: 1) {
+
+  .chip {
+    transform: scale(.4);
+    margin-left: 16vw;
+    margin-top: -110px;
+  }
+
+}
+
+@media screen and (min-width: 375px) and (max-width: 375px) and (-webkit-min-device-pixel-ratio: 1) {
+
+  .chip {
+    transform: scale(.35);
+    margin-left: 12vw;
+    margin-top: -130px;
+  }
+
+}
+
+@media screen and (min-width: 358px) and (max-width: 360px) and (-webkit-min-device-pixel-ratio: 1) {
+
+  .chip {
+    transform: scale(.35);
+    margin-left: 10vw;
+    margin-top: -150px;
+  }
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 358px) and (-webkit-min-device-pixel-ratio: 1) {
+
+  .chip {
+    transform: scale(.3);
+    margin-left: 6vw;
+    margin-top: -150px;
   }
 
 }

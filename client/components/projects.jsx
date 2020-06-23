@@ -9,6 +9,7 @@ class Projects extends React.Component {
   }
 
   render() {
+
     return(
       <div>
 
@@ -29,6 +30,7 @@ class Projects extends React.Component {
 
       </div>
     )
+
   }
 }
 

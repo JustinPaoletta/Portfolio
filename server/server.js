@@ -1,8 +1,9 @@
 const express = require('express');
+
 const server = express();
 
 const host = 'localhost';
-const port = '5000';
+const port = process.env.PORT || '5000';
 
 server.use(express.urlencoded());
 server.use(express.json());

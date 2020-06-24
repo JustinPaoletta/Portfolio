@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../../public/component-styles/wct.css';
 
 class WiresConnectorsTips extends React.Component {
   constructor(props){
@@ -9,6 +10,7 @@ class WiresConnectorsTips extends React.Component {
   }
 
   render() {
+
     return(
       <div>
         <div className="wire1"></div>

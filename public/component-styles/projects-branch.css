@@ -1,0 +1,270 @@
+/* PROJECTS BRANCH */
+
+.projectLine1 {
+  border: gray solid 5px;
+  margin-top: -125px;
+  margin-left: 260px;
+  position: absolute;
+  width:150px;
+}
+
+.projectLine1Turn {
+  border: gray solid 5px;
+  margin-top: -185px;
+  margin-left: 340px;
+  position: absolute;
+  height:50px;
+}
+
+.projectL1TSocket {
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: -215px;
+  margin-left: 330px;
+  position: absolute;
+  background-color: white;
+  -webkit-animation-name: colorchange;
+  -webkit-animation-duration: 30s;
+  animation-name: colorchange;
+  animation-duration: 30s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+}
+
+.projectLine2 {
+  border: gray solid 5px;
+  margin-top: -275px;
+  margin-left: 420px;
+  position: absolute;
+  height:150px;
+}
+
+.projectSocketMain {
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: -300px;
+  margin-left: 410px;
+  position: absolute;
+}
+
+.projectLine2Turn {
+  border: gray solid 5px;
+  margin-top: -185px;
+  margin-left: 430px;
+  position: absolute;
+  width:50px;
+}
+
+.projectL2TSocket {
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: -195px;
+  margin-left: 490px;
+  position: absolute;
+  background-color: white;
+  -webkit-animation-name: colorchange2E;
+  -webkit-animation-duration: 30s;
+  animation-name: colorchange2E;
+  animation-duration: 30s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+}
+
+.projectDatabit{
+  z-index:1;
+  border: solid 10px #62DAFE;
+  margin-top: -130px;
+  margin-left: 260px;
+  position: absolute;
+  -webkit-animation-name: datastream;
+  -webkit-animation-duration: 3s;
+  animation-name: datastream;
+  animation-duration: 3s;
+  background-color: rgb(48, 48, 48);
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+}
+
+.projects {
+  position: absolute;
+  margin-top: -400px;
+  margin-left: 350px;
+  font-size: 2.5rem;
+  opacity: 0;
+  -webkit-animation-name: projectshow;
+  -webkit-animation-duration: 4s;
+  animation-name: projectshow;
+  animation-duration: 4s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+  cursor:pointer;
+}
+
+/* ANIMATE */
+
+@-webkit-keyframes datastream {
+
+  50% {
+    margin-top: -130px;
+    margin-left: 415px;
+  }
+
+  100% {
+    margin-top: -295px;
+    margin-left: 415px;
+  }
+
+}
+
+@keyframes datastream {
+
+  50% {
+    margin-top: -130px;
+    margin-left: 415px;
+  }
+
+  100% {
+    margin-top: -295px;
+    margin-left: 415px;
+  }
+
+}
+
+@-webkit-keyframes projectshow {
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+
+}
+
+@keyframes projectshow {
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+
+}
+
+@-webkit-keyframes colorchange2E {
+
+  40% {
+    background-color: white;
+  }
+
+  41% {
+    background-color: blue;
+  }
+
+  42% {
+    background-color: blue;
+  }
+
+  43% {
+    background-color: white;
+  }
+
+  66% {
+    background-color: white;
+  }
+
+  67% {
+    background-color: blue;
+  }
+
+  68% {
+    background-color: blue;
+  }
+
+  69% {
+    background-color: white;
+  }
+
+  91% {
+    background-color: white;
+  }
+
+  92% {
+    background-color: blue;
+  }
+
+  93% {
+    background-color: blue;
+  }
+
+  94% {
+    background-color: white;
+  }
+
+}
+
+@keyframes colorchange2E {
+
+  40% {
+    background-color: white;
+  }
+
+  41% {
+    background-color: blue;
+  }
+
+  42% {
+    background-color: blue;
+  }
+
+  43% {
+    background-color: white;
+  }
+
+  66% {
+    background-color: white;
+  }
+
+  67% {
+    background-color: blue;
+  }
+
+  68% {
+    background-color: blue;
+  }
+
+  69% {
+    background-color: white;
+  }
+
+  91% {
+    background-color: white;
+  }
+
+  92% {
+    background-color: blue;
+  }
+
+  93% {
+    background-color: blue;
+  }
+
+  94% {
+    background-color: white;
+  }
+
+}

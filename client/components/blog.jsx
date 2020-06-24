@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../../public/component-styles/blog-branch.css';
 
 class Blog extends React.Component {
   constructor(props){

@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../../public/component-styles/about-branch.css';
 
 class About extends React.Component {
   constructor(props){

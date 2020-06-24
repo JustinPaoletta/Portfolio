@@ -1,0 +1,252 @@
+/* ABOUT BRANCH */
+
+.aboutLine1 {
+  border: gray solid 5px;
+  margin-top: -75px;
+  margin-left: -190px;
+  position: absolute;
+  width:170px;
+}
+
+.aboutLine1Turn {
+  border: gray solid 5px;
+  margin-top: -255px;
+  margin-left: -100px;
+  position: absolute;
+  height:170px;
+}
+
+.aboutLine1ATurn {
+  border: gray solid 5px;
+  margin-top: -265px;
+  margin-left: -200px;
+  position: absolute;
+  width:100px;
+}
+
+.aboutSocketMain {
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: -275px;
+  margin-left: -230px;
+  position: absolute;
+}
+
+.aboutL1ASocket{
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: -85px;
+  margin-left: -220px;
+  position: absolute;
+  background-color: white;
+  -webkit-animation-name: colorchange2B;
+  -webkit-animation-duration: 30s;
+  animation-name: colorchange2B;
+  animation-duration: 30s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+}
+
+.aboutDatabit {
+  border: solid 10px #62DAFE;
+  margin-top: -80px;
+  margin-left: -30px;
+  position: absolute;
+  -webkit-animation-name: datastream2;
+  -webkit-animation-duration: 2s;
+  animation-name: datastream2;
+  animation-duration: 2s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+}
+
+.about {
+  position: absolute;
+  margin-top: -400px;
+  margin-left: -310px;
+  font-size: 2.5rem;
+  opacity: 0;
+  -webkit-animation-name: aboutshow;
+  -webkit-animation-duration: 3s;
+  animation-name: aboutshow;
+  animation-duration: 3s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+  cursor:pointer;
+}
+
+/* ANIMATE */
+
+@-webkit-keyframes datastream2 {
+
+  30% {
+    margin-top: -80px;
+    margin-left: -105px;
+  }
+
+  50% {
+    margin-top: -270px;
+    margin-left: -105px;
+  }
+
+  100% {
+    margin-top: -270px;
+    margin-left: -225px;
+  }
+
+}
+
+@keyframes datastream2 {
+
+  30% {
+    margin-top: -80px;
+    margin-left: -105px;
+  }
+
+  50% {
+    margin-top: -270px;
+    margin-left: -105px;
+  }
+
+  100% {
+    margin-top: -270px;
+    margin-left: -225px;
+  }
+
+}
+
+@-webkit-keyframes aboutshow {
+
+  66% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+
+}
+
+@keyframes aboutshow {
+
+  66% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+
+}
+
+@-webkit-keyframes colorchange2B {
+
+  37% {
+    background-color: white;
+  }
+
+  38% {
+    background-color: blue;
+  }
+
+  39% {
+    background-color: blue;
+  }
+
+  40% {
+    background-color: white;
+  }
+
+  63% {
+    background-color: white;
+  }
+
+  64% {
+    background-color: blue;
+  }
+
+  65% {
+    background-color: blue;
+  }
+
+  66% {
+    background-color: white;
+  }
+
+  88% {
+    background-color: white;
+  }
+
+  89% {
+    background-color: blue;
+  }
+
+  90% {
+    background-color: blue;
+  }
+
+  91% {
+    background-color: white;
+  }
+
+}
+
+@keyframes colorchange2B {
+
+  37% {
+    background-color: white;
+  }
+
+  38% {
+    background-color: blue;
+  }
+
+  39% {
+    background-color: blue;
+  }
+
+  40% {
+    background-color: white;
+  }
+
+  63% {
+    background-color: white;
+  }
+
+  64% {
+    background-color: blue;
+  }
+
+  65% {
+    background-color: blue;
+  }
+
+  66% {
+    background-color: white;
+  }
+
+  88% {
+    background-color: white;
+  }
+
+  89% {
+    background-color: blue;
+  }
+
+  90% {
+    background-color: blue;
+  }
+
+  91% {
+    background-color: white;
+  }
+
+}

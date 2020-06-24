@@ -1,0 +1,188 @@
+/* WIRESCONNECTORSTIPS */
+
+.wire1 {
+  position: absolute;
+  height: 190px;
+  width: 2px;
+  background-color: rgb(201, 201, 201);
+  margin-left: 40px;
+  margin-top: -200px;
+}
+
+.wire2 {
+  position: absolute;
+  height: 190px;
+  width: 2px;
+  background-color: rgb(201, 201, 201);
+  margin-left: 60px;
+  margin-top: -200px;
+}
+
+.wire3 {
+  position: absolute;
+  height: 190px;
+  width: 2px;
+  background-color: rgb(201, 201, 201);
+  margin-left: 80px;
+  margin-top: -200px;
+}
+
+.wire4 {
+  position: absolute;
+  height: 190px;
+  width: 2px;
+  background-color: rgb(201, 201, 201);
+  margin-left: 125px;
+  margin-top: 260px;
+}
+
+.wire5 {
+  position: absolute;
+  height: 190px;
+  width: 2px;
+  background-color: rgb(201, 201, 201);
+  margin-left: 165px;
+  margin-top: 260px;
+}
+
+.connector1{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: 260px;
+  width:20px;
+  margin-top: 220px;
+}
+
+.connector2{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: 260px;
+  margin-top: 180px;
+  width:20px;
+}
+
+.connector3{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: 180px;
+  height:20px;
+  margin-top: 260px;
+}
+
+.connector4{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: 140px;
+  margin-top: 260px;
+  height:20px;
+}
+
+.connector5{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: 100px;
+  height:20px;
+  margin-top: 260px;
+}
+
+.connector6{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: 60px;
+  margin-top: 260px;
+  height:20px;
+}
+
+.connector7{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: -40px;
+  width:20px;
+  margin-top: 20px;
+}
+
+.connector8{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 80px;
+  width:20px;
+}
+
+.connector9{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 220px;
+  width:20px;
+}
+
+.connector10{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: 120px;
+  margin-top: -40px;
+  height:20px;
+}
+
+.connector11{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: 160px;
+  margin-top: -40px;
+  height:20px;
+}
+
+.connector12{
+  border: solid 5px rgb(43, 43, 43);
+  position: absolute;
+  margin-left: 200px;
+  margin-top: -40px;
+  height:20px;
+}
+
+
+.tip1 {
+  width:3px;
+  height:4px;
+  background-color: blue;
+  position: absolute;
+  margin-left: 39px;
+  margin-top: -202px;
+}
+
+.tip2 {
+  width:4px;
+  height:3px;
+  background-color: yellow;
+  position: absolute;
+  margin-left: 59px;
+  margin-top: -202px;
+}
+
+.tip3 {
+  width:3px;
+  height:4px;
+  background-color: blue;
+  position: absolute;
+  margin-left: 79px;
+  margin-top: -202px;
+}
+
+.tip4 {
+  width:3px;
+  height:4px;
+  background-color: blue;
+  position: absolute;
+  margin-left: 124px;
+  margin-top: 451px;
+}
+
+.tip5 {
+  width:4px;
+  height:3px;
+  background-color: yellow;
+  position: absolute;
+  margin-left: 164px;
+  margin-top: 451px;
+}

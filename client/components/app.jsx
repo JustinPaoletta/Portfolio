@@ -18,18 +18,16 @@ class App extends React.Component {
    render() {
 
      return(
-       <div>
-        <div className="motherBoard">
-          <div className="chip">
-            <WiresConnectorsTips />
-            <Statement />
-            <Projects />
-            <Contact />
-            <About />
-            <Blog />
-            </div>
+       <div className="motherBoard">
+         <div className="chip">
+           <WiresConnectorsTips />
+           <Statement />
+           <Projects />
+           <Contact />
+           <About />
+           <Blog />
         </div>
-      </div>
+       </div>
      )
 
    }

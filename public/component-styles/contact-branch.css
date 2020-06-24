@@ -1,0 +1,402 @@
+/* CONTACT BRANCH */
+
+.contactLine1 {
+  border: gray solid 5px;
+  margin-top: -75px;
+  margin-left: 260px;
+  position: absolute;
+  width:130px;
+}
+
+.contactLine2 {
+  border: gray solid 5px;
+  margin-top: -75px;
+  margin-left: 400px;
+  position: absolute;
+  height:170px;
+}
+
+.contactLine2ATurn {
+  border: gray solid 5px;
+  margin-top: 65px;
+  margin-left: 410px;
+  position: absolute;
+  width:100px;
+}
+
+.contactL2ATSocket{
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: 55px;
+  margin-left: 520px;
+  position: absolute;
+  background-color: white;
+  -webkit-animation-name: colorchange2C;
+  -webkit-animation-duration: 30s;
+  animation-name: colorchange2C;
+  animation-duration: 30s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+}
+
+.contactLine2BTurn {
+  border: gray solid 5px;
+  margin-top: 105px;
+  margin-left: 300px;
+  position: absolute;
+  width:100px;
+}
+
+.contactL2BTSocket{
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: 105px;
+  margin-left: 300px;
+  position: absolute;
+  background-color: white;
+  -webkit-animation-name: colorchange2D;
+  -webkit-animation-duration: 30s;
+  animation-name: colorchange2D;
+  animation-duration: 30s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+}
+
+.contactLine2CTurn {
+  border: gray solid 5px;
+  margin-top: 75px;
+  margin-left: 460px;
+  position: absolute;
+  height:80px;
+}
+
+.contactSocketMain{
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: 165px;
+  margin-left: 450px;
+  position: absolute;
+}
+
+.contactDatabit {
+  z-index: 1;
+  border: solid 10px #62DAFE;
+  margin-top: -81px;
+  margin-left: 260px;
+  position: absolute;
+  -webkit-animation-name: datastream4;
+  -webkit-animation-duration: 4.5s;
+  animation-name: datastream4;
+  animation-duration: 4.5s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+}
+
+.contact {
+  position: absolute;
+  margin-top: 185px;
+  margin-left: 380px;
+  font-size: 2.5rem;
+  opacity: 0;
+  -webkit-animation-name: contactshow;
+  -webkit-animation-duration: 6s;
+  animation-name: contactshow;
+  animation-duration: 6s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+  cursor:pointer;
+}
+
+/* ANIMATE */
+
+
+@-webkit-keyframes datastream4 {
+
+  10% {
+    margin-top: -81px;
+    margin-left: 395px;
+  }
+
+  60% {
+    margin-top: 61px;
+    margin-left: 395px;
+  }
+
+  75% {
+    margin-top: 61px;
+    margin-left: 455px;
+  }
+
+  100% {
+    margin-top: 170px;
+    margin-left: 455px;
+  }
+
+}
+
+@keyframes datastream4 {
+
+  10% {
+    margin-top: -81px;
+    margin-left: 395px;
+  }
+
+  60% {
+    margin-top: 61px;
+    margin-left: 395px;
+  }
+
+  75% {
+    margin-top: 61px;
+    margin-left: 455px;
+  }
+
+  100% {
+    margin-top: 170px;
+    margin-left: 455px;
+  }
+
+}
+
+@-webkit-keyframes contactshow {
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+
+}
+
+@keyframes contactshow {
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+
+}
+
+@-webkit-keyframes colorchange2D {
+
+  30% {
+    background-color: white;
+  }
+
+  31% {
+    background-color: blue;
+  }
+
+  32% {
+    background-color: blue;
+  }
+
+  33% {
+    background-color: white;
+  }
+
+  55% {
+    background-color: white;
+  }
+
+  56% {
+    background-color: blue;
+  }
+
+  57% {
+    background-color: blue;
+  }
+
+  58% {
+    background-color: white;
+  }
+
+  80% {
+    background-color: white;
+  }
+
+  81% {
+    background-color: blue;
+  }
+
+  82% {
+    background-color: blue;
+  }
+
+  83% {
+    background-color: white;
+  }
+
+}
+
+@keyframes colorchange2D {
+
+  30% {
+    background-color: white;
+  }
+
+  31% {
+    background-color: blue;
+  }
+
+  32% {
+    background-color: blue;
+  }
+
+  33% {
+    background-color: white;
+  }
+
+  55% {
+    background-color: white;
+  }
+
+  56% {
+    background-color: blue;
+  }
+
+  57% {
+    background-color: blue;
+  }
+
+  58% {
+    background-color: white;
+  }
+
+  80% {
+    background-color: white;
+  }
+
+  81% {
+    background-color: blue;
+  }
+
+  82% {
+    background-color: blue;
+  }
+
+  83% {
+    background-color: white;
+  }
+
+}
+
+@-webkit-keyframes colorchange2C {
+
+  32% {
+    background-color: white;
+  }
+
+  33% {
+    background-color: blue;
+  }
+
+  34% {
+    background-color: blue;
+  }
+
+  35% {
+    background-color: white;
+  }
+
+  58% {
+    background-color: white;
+  }
+
+  59% {
+    background-color: blue;
+  }
+
+  60% {
+    background-color: blue;
+  }
+
+  61% {
+    background-color: white;
+  }
+
+  83% {
+    background-color: white;
+  }
+
+  84% {
+    background-color: blue;
+  }
+
+  85% {
+    background-color: blue;
+  }
+
+  86% {
+    background-color: white;
+  }
+
+}
+
+@keyframes colorchange2C {
+
+  32% {
+    background-color: white;
+  }
+
+  33% {
+    background-color: blue;
+  }
+
+  34% {
+    background-color: blue;
+  }
+
+  35% {
+    background-color: white;
+  }
+
+  58% {
+    background-color: white;
+  }
+
+  59% {
+    background-color: blue;
+  }
+
+  60% {
+    background-color: blue;
+  }
+
+  61% {
+    background-color: white;
+  }
+
+  83% {
+    background-color: white;
+  }
+
+  84% {
+    background-color: blue;
+  }
+
+  85% {
+    background-color: blue;
+  }
+
+  86% {
+    background-color: white;
+  }
+
+}

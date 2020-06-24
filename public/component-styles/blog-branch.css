@@ -1,0 +1,306 @@
+/* BLOG BRANCH */
+
+.blogLine1 {
+  border: gray solid 5px;
+  margin-top: 45px;
+  margin-left: 20px;
+  position: absolute;
+  height:56px;
+}
+
+.blogLine1Turn {
+  border: gray solid 5px;
+  margin-top: 101px;
+  margin-left: -270px;
+  position: absolute;
+  width:280px;
+}
+
+.blogLine1ATurn {
+  border: gray solid 5px;
+  margin-top: 101px;
+  margin-left: -280px;
+  position: absolute;
+  height:80px;
+}
+
+.blogLine1BTurn {
+  border: gray solid 5px;
+  margin-top: 181px;
+  margin-left: -270px;
+  position: absolute;
+  width:130px;
+}
+
+.blogSocketMain{
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: 171px;
+  margin-left: -130px;
+  position: absolute;
+}
+
+.blogLine1Branch1 {
+  border: gray solid 5px;
+  margin-top: 31px;
+  margin-left: -111px;
+  position: absolute;
+  height:60px;
+}
+
+.blogLine1Branch2 {
+  border: gray solid 5px;
+  margin-top: 51px;
+  margin-left: -191px;
+  position: absolute;
+  height:40px;
+}
+
+.blogL1B1Socket{
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: 0px;
+  margin-left: -120px;
+  position: absolute;
+  background-color: white;
+  -webkit-animation-name: colorchange;
+  -webkit-animation-duration: 30s;
+  animation-name: colorchange;
+  animation-duration: 30s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+}
+
+.blogL1B2Socket{
+  border: solid 5px gray;
+  height: 20px;
+  width: 20px;
+  margin-top: 30px;
+  margin-left: -200px;
+  position: absolute;
+  background-color: white;
+  -webkit-animation-name: colorchange2;
+  -webkit-animation-duration: 30s;
+  animation-name: colorchange2;
+  animation-duration: 30s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+}
+
+.blogDatabit {
+  border: solid 10px #62DAFE;
+  margin-top: 51px;
+  margin-left: 15px;
+  position: absolute;
+  -webkit-animation-name: datastream3;
+  -webkit-animation-duration: 6s;
+  animation-name: datastream3;
+  animation-duration: 6s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+  z-index: 1;
+}
+
+.blog {
+  position: absolute;
+  margin-top: 185px;
+  margin-left: -310px;
+  font-size: 2.5rem;
+  opacity: 0;
+  -webkit-animation-name: blogshow;
+  -webkit-animation-duration: 8s;
+  animation-name: blogshow;
+  animation-duration: 8s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+  cursor:pointer;
+}
+
+
+/* ANIMATE */
+
+@-webkit-keyframes colorchange2 {
+
+  27% {
+    background-color: white;
+  }
+
+  28% {
+    background-color: blue;
+  }
+
+  29% {
+    background-color: blue;
+  }
+
+  30% {
+    background-color: white;
+  }
+
+  53% {
+    background-color: white;
+  }
+
+  54% {
+    background-color: blue;
+  }
+
+  55% {
+    background-color: blue;
+  }
+
+  56% {
+    background-color: white;
+  }
+
+  78% {
+    background-color: white;
+  }
+
+  79% {
+    background-color: blue;
+  }
+
+  80% {
+    background-color: blue;
+  }
+
+  81% {
+    background-color: white;
+  }
+
+}
+
+@keyframes colorchange2 {
+
+  27% {
+    background-color: white;
+  }
+
+  28% {
+    background-color: blue;
+  }
+
+  29% {
+    background-color: blue;
+  }
+
+  30% {
+    background-color: white;
+  }
+
+  53% {
+    background-color: white;
+  }
+
+  54% {
+    background-color: blue;
+  }
+
+  55% {
+    background-color: blue;
+  }
+
+  56% {
+    background-color: white;
+  }
+
+  78% {
+    background-color: white;
+  }
+
+  79% {
+    background-color: blue;
+  }
+
+  80% {
+    background-color: blue;
+  }
+
+  81% {
+    background-color: white;
+  }
+
+}
+
+@-webkit-keyframes datastream3 {
+
+  10% {
+    margin-top: 96px;
+    margin-left: 15px;
+  }
+
+  60% {
+    margin-top: 96px;
+    margin-left: -285px;
+  }
+
+  75% {
+    margin-top: 176px;
+    margin-left: -285px;
+  }
+
+  100% {
+    margin-top: 176px;
+    margin-left: -125px;
+  }
+
+}
+
+@keyframes datastream3 {
+
+  10% {
+    margin-top: 96px;
+    margin-left: 15px;
+  }
+
+  60% {
+    margin-top: 96px;
+    margin-left: -285px;
+  }
+
+  75% {
+    margin-top: 176px;
+    margin-left: -285px;
+  }
+
+  100% {
+    margin-top: 176px;
+    margin-left: -125px;
+  }
+
+}
+
+@-webkit-keyframes blogshow {
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+
+}
+
+@keyframes blogshow {
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+
+}

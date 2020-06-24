@@ -1,32 +1,32 @@
 import React from 'react';
-import styles from '../../public/component-styles/about-branch.css';
+import '../../public/component-styles/about-branch.css';
 
 class About extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
 
-    }
+    };
   }
 
   render() {
-    return(
+    return (
       <div>
 
-        <div className="aboutLine1"></div>
-        <div className="aboutLine1Turn"></div>
-        <div className="aboutLine1ATurn"></div>
-        <div className="aboutSocketMain"></div>
-        <div className="aboutL1ASocket"></div>
+        <div className="aboutLine1" />
+        <div className="aboutLine1Turn" />
+        <div className="aboutLine1ATurn" />
+        <div className="aboutSocketMain" />
+        <div className="aboutL1ASocket" />
 
-        <div className="aboutDatabit"></div>
+        <div className="aboutDatabit" />
 
         <div className="about">
           <p>ABOUT</p>
         </div>
 
       </div>
-    )
+    );
   }
 }
 

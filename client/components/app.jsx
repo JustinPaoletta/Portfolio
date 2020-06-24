@@ -1,36 +1,34 @@
 import React from 'react';
-import axios from 'axios';
-import WiresConnectorsTips from './wct.jsx';
-import Statement from './statement.jsx';
-import Projects from './projects.jsx';
-import Contact from './contact.jsx';
-import About from './about.jsx';
-import Blog from './blog.jsx';
- 
+// import axios from 'axios';
+import WiresConnectorsTips from './wct';
+import Statement from './statement';
+import Projects from './projects';
+import Contact from './contact';
+import About from './about';
+import Blog from './blog';
+
 class App extends React.Component {
-   constructor(props) {
-     super(props)
-     this.state = {
+  constructor(props) {
+    super(props);
+    this.state = {
 
-     }
-   }
+    };
+  }
 
-   render() {
-
-     return(
-       <div className="motherBoard">
-         <div className="chip">
-           <WiresConnectorsTips />
-           <Statement />
-           <Projects />
-           <Contact />
-           <About />
-           <Blog />
+  render() {
+    return (
+      <div className="motherBoard">
+        <div className="chip">
+          <WiresConnectorsTips />
+          <Statement />
+          <Projects />
+          <Contact />
+          <About />
+          <Blog />
         </div>
-       </div>
-     )
-
-   }
+      </div>
+    );
+  }
 }
 
 export default App;

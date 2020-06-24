@@ -1,22 +1,22 @@
 import React from 'react';
 
 class Statement extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
 
-    }
+    };
   }
 
   render() {
-    return(
+    return (
       <div className="statement">
-        <p>Hello, I'm</p>
+        <p>Hello, I&apos;m</p>
         <p><strong className="name">Justin Paoletta</strong></p>
         <p>A Full Stack</p>
         <p>Software Engineer</p>
       </div>
-    )
+    );
   }
 }
 

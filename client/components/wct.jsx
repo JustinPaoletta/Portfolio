@@ -1,42 +1,41 @@
 import React from 'react';
-import styles from '../../public/component-styles/wct.css';
+import '../../public/component-styles/wct.css';
 
 class WiresConnectorsTips extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
 
-    }
+    };
   }
 
   render() {
-
-    return(
+    return (
       <div>
-        <div className="wire1"></div>
-        <div className="wire2"></div>
-        <div className="wire3"></div>
-        <div className="wire4"></div>
-        <div className="wire5"></div>
-        <div className="connector1"></div>
-        <div className="connector2"></div>
-        <div className="connector3"></div>
-        <div className="connector4"></div>
-        <div className="connector5"></div>
-        <div className="connector6"></div>
-        <div className="connector7"></div>
-        <div className="connector8"></div>
-        <div className="connector9"></div>
-        <div className="connector10"></div>
-        <div className="connector11"></div>
-        <div className="connector12"></div>
-        <div className="tip1"></div>
-        <div className="tip2"></div>
-        <div className="tip3"></div>
-        <div className="tip4"></div>
-        <div className="tip5"></div>
+        <div className="wire1" />
+        <div className="wire2" />
+        <div className="wire3" />
+        <div className="wire4" />
+        <div className="wire5" />
+        <div className="connector1" />
+        <div className="connector2" />
+        <div className="connector3" />
+        <div className="connector4" />
+        <div className="connector5" />
+        <div className="connector6" />
+        <div className="connector7" />
+        <div className="connector8" />
+        <div className="connector9" />
+        <div className="connector10" />
+        <div className="connector11" />
+        <div className="connector12" />
+        <div className="tip1" />
+        <div className="tip2" />
+        <div className="tip3" />
+        <div className="tip4" />
+        <div className="tip5" />
       </div>
-    )
+    );
   }
 }
 

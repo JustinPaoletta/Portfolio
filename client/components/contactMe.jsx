@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import Linkedin from '../../public/linkedin.png';
 import GitHub from '../../public/github.png';
 import Medium from '../../public/medium.png';
@@ -9,6 +10,15 @@ function ContactForm({ clickIt }) {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+
+  function sendMail() {
+    axios.post('/mail', {
+      from: email,
+      to: 'justinpaoletta@gmail.com',
+      subject: subject,
+      text: message,
+    });
+  }
 
   return (
     <div>
@@ -25,7 +35,7 @@ function ContactForm({ clickIt }) {
         <h3>Looking to add Talent to your Team?</h3>
         <h3>Drop me a Line </h3>
       </div>
-      <form className="ContactForm" onSubmit={(e) => { e.preventDefault(); console.log(name, email, subject, message); }}>
+      <form className="ContactForm" onSubmit={(e) => { e.preventDefault(); sendMail(); console.log(name, email, subject, message); }}>
         <input placeholder="Name" value={name} onChange={(e) => { setName(e.target.value); }} />
         <input placeholder="Email" value={email} onChange={(e) => { setEmail(e.target.value); }} />
         <input placeholder="Subject" value={subject} onChange={(e) => { setSubject(e.target.value); }} />

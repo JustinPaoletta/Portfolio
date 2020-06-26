@@ -43,7 +43,7 @@ class App extends React.Component {
       display = <ContactForm clickIt={this.changeModule} />;
     }
     return (
-      <div className="app-container">
+      <div>
         {display}
       </div>
 

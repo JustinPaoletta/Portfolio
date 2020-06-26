@@ -15,7 +15,7 @@ function ContactForm({ clickIt }) {
     axios.post('/mail', {
       from: email,
       to: 'justinpaoletta@gmail.com',
-      subject: subject,
+      subject: `Portfolio Contact: ${subject}`,
       text: message,
     });
   }

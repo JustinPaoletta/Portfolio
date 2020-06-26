@@ -12,13 +12,10 @@ server.use(express.urlencoded());
 server.use(express.json());
 
 const transport = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 465,
-  protocol: 'ssl',
-  secure: true,
+  service: 'gmail.com',
   auth: {
-    user: 'justinpaoletta@gmail.com',
-    pass: process.env.PASSWORD,
+    user: 'dev.portfolio.contact@gmail.com',
+    pass: 'coding321',
   },
 });
 

@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const express = require('express');
 const nodemailer = require('nodemailer');
 require('dotenv').config();
@@ -13,14 +14,13 @@ server.use(express.json());
 const transport = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'dev.portfolio.contact@gmail.com',
-    pass: 'coding321',
+    user: 'justinpaoletta@gmail.com',
+    pass: process.env.PASSWORD,
   },
 });
 
 server.post('/mail', (req, res) => {
   const { body } = req;
-  console.log(body);
   const mailOptions = {
     replyTo: body.from,
     cc: body.from,

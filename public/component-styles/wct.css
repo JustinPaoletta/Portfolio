@@ -4,7 +4,7 @@
   position: absolute;
   height: 190px;
   width: 2px;
-  background-color: rgb(201, 201, 201);
+  background-color: rgb(131, 131, 131);
   margin-left: 40px;
   margin-top: -200px;
 }
@@ -13,7 +13,7 @@
   position: absolute;
   height: 190px;
   width: 2px;
-  background-color: rgb(201, 201, 201);
+  background-color: rgb(131, 131, 131);
   margin-left: 60px;
   margin-top: -200px;
 }
@@ -22,7 +22,7 @@
   position: absolute;
   height: 190px;
   width: 2px;
-  background-color: rgb(201, 201, 201);
+  background-color: rgb(131, 131, 131);
   margin-left: 80px;
   margin-top: -200px;
 }
@@ -31,7 +31,7 @@
   position: absolute;
   height: 190px;
   width: 2px;
-  background-color: rgb(201, 201, 201);
+  background-color: rgb(131, 131, 131);
   margin-left: 125px;
   margin-top: 260px;
 }
@@ -40,7 +40,7 @@
   position: absolute;
   height: 190px;
   width: 2px;
-  background-color: rgb(201, 201, 201);
+  background-color: rgb(131, 131, 131);
   margin-left: 165px;
   margin-top: 260px;
 }
@@ -145,7 +145,7 @@
 .tip1 {
   width:3px;
   height:4px;
-  background-color: blue;
+  background-color: rgb(64, 67, 255);
   position: absolute;
   margin-left: 39px;
   margin-top: -202px;
@@ -154,7 +154,7 @@
 .tip2 {
   width:4px;
   height:3px;
-  background-color: yellow;
+  background-color: rgb(255, 255, 107);
   position: absolute;
   margin-left: 59px;
   margin-top: -202px;
@@ -163,7 +163,7 @@
 .tip3 {
   width:3px;
   height:4px;
-  background-color: blue;
+  background-color: rgb(64, 67, 255);
   position: absolute;
   margin-left: 79px;
   margin-top: -202px;
@@ -172,7 +172,7 @@
 .tip4 {
   width:3px;
   height:4px;
-  background-color: blue;
+  background-color: rgb(64, 67, 255);
   position: absolute;
   margin-left: 124px;
   margin-top: 451px;
@@ -181,7 +181,7 @@
 .tip5 {
   width:4px;
   height:3px;
-  background-color: yellow;
+  background-color: rgb(255, 255, 107);
   position: absolute;
   margin-left: 164px;
   margin-top: 451px;

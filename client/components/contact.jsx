@@ -25,7 +25,7 @@ class Contact extends React.Component {
         <div className="contactDatabit" />
 
         <div className="contact">
-          <p>CONTACT</p>
+          <p onClick={(e) => this.props.clickIt(e.target.innerText)}>CONTACT</p>
         </div>
 
       </div>

@@ -7,13 +7,13 @@ body {
 }
 
 #app{
-  margin-top: 30vh;
   width:100%;
   text-align: center;
   margin-left: -1vw;
 }
 
 .motherBoard {
+  margin-top: 30vh;
   display: inline-block
 }
 
@@ -229,4 +229,59 @@ body {
     margin-top: -15vh;
   }
 
+}
+
+
+
+/* CONTACTFORM */
+
+.ContactForm {
+  display: grid;
+  grid-template-columns: 1fr;
+  width:30%;
+  margin-left: 35%;
+}
+
+.contactHeader {
+  font-size: 3.5rem;
+  margin-top: 50px;
+}
+
+.imSocial{
+  font-size: 2.5rem;
+}
+
+textarea {
+  resize:none;
+  height:100px;
+  padding: 10px;
+  font: 400 13.3333px Arial;
+}
+
+input {
+  padding:10px;
+  /* height:30px; */
+}
+
+.icons img {
+  height:50px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.contactMessage {
+  line-height: 15px;
+}
+
+.navigate {
+  position: sticky;
+  margin-left: 1%;
+  width:100%;
+  background-color: rgba(255, 255, 255, 0.226);
+  display: grid;
+  grid-template-columns: 8fr 1fr 1fr 1fr 1fr;
+}
+
+.navigate p {
+  cursor: pointer;
 }

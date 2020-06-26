@@ -6,27 +6,47 @@ import Projects from './projects';
 import Contact from './contact';
 import About from './about';
 import Blog from './blog';
+import ContactForm from './contactMe';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      clicked: '',
     };
+    this.changeModule = this.changeModule.bind(this);
+  }
+
+  changeModule(display) {
+    this.setState({
+      clicked: display,
+    });
   }
 
   render() {
-    return (
-      <div className="motherBoard">
-        <div className="chip">
-          <WiresConnectorsTips />
-          <Statement />
-          <Projects />
-          <Contact />
-          <About />
-          <Blog />
+    let display;
+    if (this.state.clicked === '') {
+      display = (
+        <div className="motherBoard">
+          <div className="chip">
+            <WiresConnectorsTips />
+            <Statement />
+            <Projects />
+            <Contact clickIt={this.changeModule} />
+            <About />
+            <Blog />
+          </div>
         </div>
+      );
+    }
+    if (this.state.clicked === 'CONTACT') {
+      display = <ContactForm clickIt={this.changeModule} />;
+    }
+    return (
+      <div className="app-container">
+        {display}
       </div>
+
     );
   }
 }

@@ -17,6 +17,7 @@ const transport = nodemailer.createTransport({
     type: 'OAuth2',
     user: 'justinpaoletta@gmail.com',
     pass: process.env.PASSWORD,
+    token: '730779045561-usjh7vl1ftog82fcbho2o3253iit7mg6',
   },
 });
 

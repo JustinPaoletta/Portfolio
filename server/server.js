@@ -28,7 +28,23 @@ server.post('/mail', (req, res) => {
     subject: body.subject,
     text: body.text,
   };
+
+  const mailOptions2 = {
+    to: body.from,
+    subject: 'Thanks For Reaching Out',
+    text: 'Thank you for your email! I will reply shortly!',
+  };
+
   transport.sendMail(mailOptions, (err, data) => {
+    if (err) {
+      console.log('Sorry there was an error sending this email');
+    } else {
+      console.log('Email was sent!');
+      res.status(200).send(data);
+    }
+  });
+
+  transport.sendMail(mailOptions2, (err, data) => {
     if (err) {
       console.log('Sorry there was an error sending this email');
     } else {

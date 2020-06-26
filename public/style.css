@@ -1,5 +1,5 @@
 body {
-  background-color:#59626B;
+  background-color:#545c64;
   text-align: center;
   font-family: 'Russo One', sans-serif;
   height:100%;
@@ -171,12 +171,110 @@ body {
 
 }
 
+/* CONTACTFORM */
+
+.ContactForm {
+  display: grid;
+  grid-template-columns: 1fr;
+  width:100%;
+}
+
+.FormContainer {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.contactHeader {
+  color:rgb(59, 59, 59);
+  font-size: 3.5rem;
+  margin-top: 35px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.imSocial{
+  font-size: 1.8rem;
+  font-family: 'Abril Fatface', cursive;
+  color:rgb(59, 59, 59);
+}
+
+textarea {
+  resize:none;
+  height:100px;
+  padding: 10px;
+  padding-top: 15px;
+  font: 400 13.3333px 'Barlow Condensed';
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+input {
+  margin-top: 5px;
+  padding:10px;
+  padding-left: 20px;
+  /* height:30px; */
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.icons img {
+  height:50px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.contactMessage {
+  font-size: 1.2rem;
+  line-height: 15px;
+  font-family: 'Markazi Text', serif;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.navigate {
+  position: sticky;
+  margin-top: -10px;
+  width:100%;
+  background-color: rgb(59, 59, 59);
+  color:white;
+  display: grid;
+  grid-template-columns: 6fr 1.5fr 1.5fr 1.5fr 1.5fr;
+}
+
+.navigate p {
+  cursor: pointer;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 100;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.contactPage {
+  background-color: rgb(250, 250, 250);
+  height:100vh;
+  width:101%;
+}
+
 /* MEDIA QUERIES */
+
+@media screen and (min-width: 1201px) and (max-width: 4000px) and (-webkit-min-device-pixel-ratio: 1) {
+
+  .chip {
+    transform: scale(.9);
+  }
+
+  .FormContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
 
 @media screen and (min-width: 1000px) and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
 
   .chip {
     transform: scale(.9);
+  }
+
+  .FormContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
   }
 
 }
@@ -220,6 +318,10 @@ body {
     margin-top: -10vh;
   }
 
+  .contactPage {
+    height:100%;
+  }
+
 }
 
 @media screen and (min-width: 100px) and (max-width: 357px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -229,59 +331,11 @@ body {
     margin-top: -15vh;
   }
 
+  .contactPage {
+    height:100%;
+  }
+
 }
 
 
 
-/* CONTACTFORM */
-
-.ContactForm {
-  display: grid;
-  grid-template-columns: 1fr;
-  width:30%;
-  margin-left: 35%;
-}
-
-.contactHeader {
-  font-size: 3.5rem;
-  margin-top: 50px;
-}
-
-.imSocial{
-  font-size: 2.5rem;
-}
-
-textarea {
-  resize:none;
-  height:100px;
-  padding: 10px;
-  font: 400 13.3333px Arial;
-}
-
-input {
-  padding:10px;
-  /* height:30px; */
-}
-
-.icons img {
-  height:50px;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-.contactMessage {
-  line-height: 15px;
-}
-
-.navigate {
-  position: sticky;
-  margin-left: 1%;
-  width:100%;
-  background-color: rgba(255, 255, 255, 0.226);
-  display: grid;
-  grid-template-columns: 8fr 1fr 1fr 1fr 1fr;
-}
-
-.navigate p {
-  cursor: pointer;
-}

@@ -21,7 +21,7 @@ function ContactForm({ clickIt }) {
   }
 
   return (
-    <div>
+    <div className="contactPage">
       <div className="navigate">
         <p />
         <p onClick={() => { clickIt(''); }}>Home</p>
@@ -35,14 +35,18 @@ function ContactForm({ clickIt }) {
         <h3>Looking to add Talent to your Team?</h3>
         <h3>Drop me a Line </h3>
       </div>
-      <form className="ContactForm" onSubmit={(e) => { e.preventDefault(); sendMail(); console.log(name, email, subject, message); }}>
-        <input placeholder="Name" value={name} onChange={(e) => { setName(e.target.value); }} />
-        <input placeholder="Email" value={email} onChange={(e) => { setEmail(e.target.value); }} />
-        <input placeholder="Subject" value={subject} onChange={(e) => { setSubject(e.target.value); }} />
-        <textarea placeholder="Message ..." value={message} onChange={(e) => { setMessage(e.target.value); }} />
-        <input type="submit" />
-      </form>
-      <p className="imSocial">I&apos;m Social</p>
+      <div className="FormContainer">
+        <p />
+        <form className="ContactForm" onSubmit={(e) => { e.preventDefault(); sendMail(); console.log(name, email, subject, message); }}>
+          <input placeholder="Name" value={name} onChange={(e) => { setName(e.target.value); }} />
+          <input placeholder="Email" value={email} onChange={(e) => { setEmail(e.target.value); }} />
+          <input placeholder="Subject" value={subject} onChange={(e) => { setSubject(e.target.value); }} />
+          <textarea placeholder="Message ..." value={message} onChange={(e) => { setMessage(e.target.value); }} />
+          <input type="submit" />
+        </form>
+        <p />
+      </div>
+      <p className="imSocial">Follow Me</p>
       <div className="icons">
         <a href="https://www.linkedin.com/in/justin-paoletta/"><img src={Linkedin} alt="" /></a>
         <a href="https://github.com/JustinPaoletta"><img src={GitHub} alt="" /></a>

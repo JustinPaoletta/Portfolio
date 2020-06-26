@@ -25,7 +25,7 @@ server.post('/mail', (req, res) => {
     replyTo: body.from,
     cc: body.from,
     to: body.to,
-    subject: body.subject,
+    subject: `Portfolio Contact: ${body.subject}`,
     text: body.text,
   };
   transport.sendMail(mailOptions, (err, data) => {

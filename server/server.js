@@ -14,6 +14,7 @@ server.use(express.json());
 const transport = nodemailer.createTransport({
   host: 'smtp.gmail.com',
   port: 465,
+  protocol: 'ssl',
   secure: true,
   auth: {
     user: 'justinpaoletta@gmail.com',

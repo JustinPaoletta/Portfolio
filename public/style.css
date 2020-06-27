@@ -354,6 +354,10 @@ input {
   font-family: 'Barlow Condensed', sans-serif;
 }
 
+.sendEmail {
+  border-radius: 0;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 1201px) and (max-width: 4000px) and (-webkit-min-device-pixel-ratio: 1) {

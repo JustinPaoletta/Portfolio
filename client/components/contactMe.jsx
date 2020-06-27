@@ -46,7 +46,7 @@ function ContactForm({ clickIt }) {
           <input placeholder="Email" value={email} onChange={(e) => { setEmail(e.target.value); }} />
           <input placeholder="Subject" value={subject} onChange={(e) => { setSubject(e.target.value); }} />
           <textarea placeholder="Message ..." value={message} onChange={(e) => { setMessage(e.target.value); }} />
-          <input type="submit" />
+          <input className="sendEmail" type="submit" />
         </form>
         <p />
       </div>

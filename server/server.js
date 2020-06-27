@@ -23,9 +23,9 @@ const transport = nodemailer.createTransport({
 
 server.post('/mail', (req, res) => {
   const { body } = req;
+
   const mailOptions = {
     replyTo: body.from,
-    cc: body.from,
     to: body.to,
     subject: body.subject,
     text: body.text,
@@ -311,13 +311,8 @@ server.post('/mail', (req, res) => {
 
 
     }
-
-
         </style>
-
-
     </head>
-
     <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f1f1f1;">
       <center style="width: 100%; background-color: #f1f1f1;">
         <div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
@@ -393,7 +388,6 @@ server.post('/mail', (req, res) => {
                         </tr>
                       </table>
                     </td>
-
                   </tr>
                 </table>
               </td>
@@ -414,29 +408,25 @@ server.post('/mail', (req, res) => {
               </td>
             </tr>
           </table>
-
         </div>
       </center>
     </body>
     </html>`,
-    // text: 'Thank you for your email! I will reply shortly!',
   };
 
-  transport.sendMail(mailOptions, (err, data) => {
+  transport.sendMail(mailOptions, (err) => {
     if (err) {
-      console.log('Sorry there was an error sending this email');
+      console.log('Sorry there was an error sending the users email');
+      res.status(502).send('Sorry there was an error sending the users email');
     } else {
-      console.log('Email was sent!');
-      res.status(200).send(data);
-    }
-  });
-
-  transport.sendMail(mailOptions2, (err, data) => {
-    if (err) {
-      console.log('Sorry there was an error sending this email');
-    } else {
-      console.log('Email was sent!');
-      res.status(200).send(data);
+      transport.sendMail(mailOptions2, (error) => {
+        if (error) {
+          console.log('Sorry there was an error sending the auto-reply');
+          res.status(502).send('Sorry there was an error sending the auto-reply');
+        } else {
+          res.status(201).send('Both emails sent!');
+        }
+      });
     }
   });
 });
@@ -448,21 +438,3 @@ server.listen(port, (err) => {
     console.log(`Server now hosted on http://${host}:${port}`);
   }
 });
-
-{/* <tr>
-<td class="bg_light" style="padding-top: 20px;" valign="top" width="100%">
-  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-    <tr>
-      <td style="text-align: center;">
-        <h3 class="heading">Follow Me</h3>
-        <div style="display:inline-flex; width:50%;">
-          <a style="padding-left:3%; padding-right:3%" href="https://www.linkedin.com/in/justin-paoletta/">Linkedin</a>
-          <a style="padding-left:3%; padding-right:3%" href="https://github.com/JustinPaoletta">GitHub</a>
-          <a style="padding-left:3%; padding-right:3%" href="https://medium.com/@justinpaoletta_dev">Medium</a>
-          <a style="padding-left:3%; padding-right:3%" href="https://twitter.com/jpaoletta_dev">Twitter</a>
-        </div>
-      </td>
-    </tr>
-  </table>
-</td>
-</tr> */}

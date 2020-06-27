@@ -4,6 +4,7 @@ import Linkedin from '../../public/linkedin.png';
 import GitHub from '../../public/github.png';
 import Medium from '../../public/medium.png';
 import Twitter from '../../public/twitter.png';
+import Hamburger from '../../public/hamburger.png';
 
 function ContactForm({ clickIt }) {
   const [name, setName] = useState('');
@@ -22,6 +23,9 @@ function ContactForm({ clickIt }) {
 
   return (
     <div className="contactPage">
+      <div className="hamburger">
+        <img className="icon" src={Hamburger} alt="" />
+      </div>
       <div className="navigate">
         <p />
         <p onClick={() => { clickIt(''); }}>Home</p>
@@ -31,9 +35,9 @@ function ContactForm({ clickIt }) {
       </div>
       <h1 className="contactHeader">LET&apos;S CONNECT</h1>
       <div className="contactMessage">
-        <h3>Have a Coding Question...</h3>
-        <h3>Looking to add Talent to your Team?</h3>
-        <h3>Drop me a Line </h3>
+        <p>Have a Coding Question...</p>
+        <p>Looking to add Talent to your Team?</p>
+        <p>Drop me a Line</p>
       </div>
       <div className="FormContainer">
         <p />

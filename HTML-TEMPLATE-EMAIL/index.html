@@ -1,40 +1,5 @@
-/* eslint-disable no-console */
-const express = require('express');
-const nodemailer = require('nodemailer');
-require('dotenv').config();
-
-const server = express();
-
-const host = 'localhost';
-const port = process.env.PORT || '5000';
-
-server.use(express.urlencoded());
-server.use(express.json());
-
-server.use(express.static('./public'));
-
-const transport = nodemailer.createTransport({
-  service: 'gmail.com',
-  auth: {
-    user: 'justinpaoletta@gmail.com',
-    pass: process.env.PASSWORD,
-  },
-});
-
-server.post('/mail', (req, res) => {
-  const { body } = req;
-  const mailOptions = {
-    replyTo: body.from,
-    cc: body.from,
-    to: body.to,
-    subject: body.subject,
-    text: body.text,
-  };
-
-  const mailOptions2 = {
-    to: body.from,
-    subject: 'Thank You',
-    html: `<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
     <head>
         <meta charset="utf-8"> <!-- utf-8 works for most cases -->
         <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
@@ -180,8 +145,8 @@ server.post('/mail', (req, res) => {
     }
     .btn.btn-primary{
       border-radius: 5px;
-      background: #8CC03E;
-      color: white;
+      background: #17bebb;
+      color: #ffffff;
     }
     .btn.btn-white{
       border-radius: 5px;
@@ -272,6 +237,7 @@ server.post('/mail', (req, res) => {
     }
     .text-author img{
       border-radius: 50%;
+      padding-bottom: 20px;
     }
     .text-author h3{
       margin-bottom: 0;
@@ -331,7 +297,7 @@ server.post('/mail', (req, res) => {
                 <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                   <tr>
                     <td class="logo" style="text-align: center;">
-                      <img style="height:80px" src="https://miro.medium.com/max/2560/1*MuVcoMPyJcq8G4qf5s3HGQ.png" />
+                      <h1><a href="#">e-Verify</a></h1>
                     </td>
                   </tr>
                 </table>
@@ -343,18 +309,18 @@ server.post('/mail', (req, res) => {
                   <tr>
                     <td style="padding: 0 2.5em; text-align: center; padding-bottom: 3em;">
                       <div class="text">
-                        <h2>Thank You For Reaching Out</h2>
-                        <p>I will reply shortly</p>
+                        <h2>Ronald would like to be your friend on e-Verify</h2>
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td style="text-align: center;">
                       <div class="text-author">
-                        <img src="https://qph.fs.quoracdn.net/main-thumb-1191521436-100-xpcblrcxmlirgrepjhlltqliqlhbdvou.jpeg" alt="" style="width: 100px;  height: 100px; margin: auto; display: block;">
-                        <h3 class="name">Justin Paoletta</h3>
-                        <span class="position">Full-Stack Software Engineer</span>
-                         <p><a href="https://dev-justin.herokuapp.com/" class="btn btn-primary">Portfolio</a></p>
+                        <img src="./fun.jpeg" alt="" style="width: 100px; max-width: 600px; height: auto; margin: auto; display: block;">
+                        <h3 class="name">Ronald Tuff</h3>
+                        <span class="position">CEO, Founder at e-Verify</span>
+                         <p><a href="#" class="btn btn-primary">Accept Request</a></p>
+                         <p><a href="#" class="btn-custom">Ignore Request</a></p>
                        </div>
                     </td>
                   </tr>
@@ -368,49 +334,51 @@ server.post('/mail', (req, res) => {
               <td valign="middle" class="bg_light footer email-section">
                 <table>
                   <tr>
-                    <td valign="top" width="45%" style="padding-top: 20px;">
+                    <td valign="top" width="33.333%" style="padding-top: 20px;">
                       <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                         <tr>
-                          <td style="padding-right: 10px;">
-                            <h3 style="text-align: center;" class="heading">About</h3>
-                            <p style="text-align: left; margin-left: 5%"><span style="margin-left: 10%">I</span> build clear, and attractive applications that improve others lives. Let's make something great together.</p>
+                          <td style="text-align: left; padding-right: 10px;">
+                            <h3 class="heading">About</h3>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                           </td>
                         </tr>
                       </table>
                     </td>
-                    <td valign="top" width="10%" style="padding-top: 20px;"></td>
-                    <td valign="top" width="45%" style="padding-top: 20px;">
+                    <td valign="top" width="33.333%" style="padding-top: 20px;">
                       <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                         <tr>
-                          <td style="padding-left: 5px; padding-right: 5px;">
-                            <h3 style="text-align: center;" class="heading">Contact</h3>
-                            <ul style="text-align: center;">
-                              <li><span class="text">Melbourne, Florida, USA</span></li>
-                              <li><span class="text">justinpaoletta@gmail.com</span></li>
-                              <li><span class="text">Cell: +1 321 615 6612</span></a></li>
+                          <td style="text-align: left; padding-left: 5px; padding-right: 5px;">
+                            <h3 class="heading">Contact Info</h3>
+                            <ul>
+                              <li><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+                              <li><span class="text">+2 392 3929 210</span></a></li>
                             </ul>
                           </td>
                         </tr>
                       </table>
                     </td>
-
+                    <td valign="top" width="33.333%" style="padding-top: 20px;">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td style="text-align: left; padding-left: 10px;">
+                            <h3 class="heading">Useful Links</h3>
+                            <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">Services</a></li>
+                              <li><a href="#">Work</a></li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
                   </tr>
                 </table>
               </td>
             </tr><!-- end: tr -->
-            <tr class="bg_light" style="text-align: center; padding-bottom:30px">
-              <td style="text-align: center;">
-                <div style="display:inline;">
-                  <a style="padding-left:3%; padding-right:3%; color:#8CC03E;" href="https://www.linkedin.com/in/justin-paoletta/">Linkedin</a>
-                  <a style="padding-left:3%; padding-right:3%; color:#8CC03E;" href="https://github.com/JustinPaoletta">GitHub</a>
-                  <a style="padding-left:3%; padding-right:3%; color:#8CC03E;" href="https://medium.com/@justinpaoletta_dev">Medium</a>
-                  <a style="padding-left:3%; padding-right:3%; color:#8CC03E;" href="https://twitter.com/jpaoletta_dev">Twitter</a>
-                </div>
-              </td>
-            </tr>
             <tr>
-              <td class="bg_light" style="text-align: center; padding-top:20px; padding-bottom:30px">
-                <p>This email was sent using Nodemailer</p>
+              <td class="bg_light" style="text-align: center;">
+                <p>No longer want to receive these email? You can <a href="#" style="color: rgba(0,0,0,.8);">Unsubscribe here</a></p>
               </td>
             </tr>
           </table>
@@ -418,51 +386,4 @@ server.post('/mail', (req, res) => {
         </div>
       </center>
     </body>
-    </html>`,
-    // text: 'Thank you for your email! I will reply shortly!',
-  };
-
-  transport.sendMail(mailOptions, (err, data) => {
-    if (err) {
-      console.log('Sorry there was an error sending this email');
-    } else {
-      console.log('Email was sent!');
-      res.status(200).send(data);
-    }
-  });
-
-  transport.sendMail(mailOptions2, (err, data) => {
-    if (err) {
-      console.log('Sorry there was an error sending this email');
-    } else {
-      console.log('Email was sent!');
-      res.status(200).send(data);
-    }
-  });
-});
-
-server.listen(port, (err) => {
-  if (err) {
-    console.log('Error starting up server');
-  } else {
-    console.log(`Server now hosted on http://${host}:${port}`);
-  }
-});
-
-{/* <tr>
-<td class="bg_light" style="padding-top: 20px;" valign="top" width="100%">
-  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-    <tr>
-      <td style="text-align: center;">
-        <h3 class="heading">Follow Me</h3>
-        <div style="display:inline-flex; width:50%;">
-          <a style="padding-left:3%; padding-right:3%" href="https://www.linkedin.com/in/justin-paoletta/">Linkedin</a>
-          <a style="padding-left:3%; padding-right:3%" href="https://github.com/JustinPaoletta">GitHub</a>
-          <a style="padding-left:3%; padding-right:3%" href="https://medium.com/@justinpaoletta_dev">Medium</a>
-          <a style="padding-left:3%; padding-right:3%" href="https://twitter.com/jpaoletta_dev">Twitter</a>
-        </div>
-      </td>
-    </tr>
-  </table>
-</td>
-</tr> */}
+    </html>

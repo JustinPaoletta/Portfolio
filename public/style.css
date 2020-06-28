@@ -360,6 +360,52 @@ input {
   padding-left: 0px;
 }
 
+.navlinks {
+  list-style: none;
+}
+
+.fademobile {
+  height:100%;
+  width:100%;
+  background-color: rgba(216, 216, 216, 0.664);
+  position: fixed;
+  top:0;
+  margin-left: -1%;
+}
+
+.hamburgerLinks {
+  background-color: rgb(139, 139, 139);
+  text-align: center;
+  z-index: 1;
+  margin-left: -1%;
+  width: 100%;
+  position: fixed;
+  top:0;
+  height:200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.icon {
+  float: left;
+  position: fixed;
+  z-index: 2;
+}
+
+.mobilemenu {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+
+/* .shiftLeft {
+  margin-right: 100px;
+}
+
+.shiftRight {
+  margin-left: 100px;
+} */
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 1201px) and (max-width: 4000px) and (-webkit-min-device-pixel-ratio: 1) {

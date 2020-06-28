@@ -11,6 +11,7 @@ function ContactForm({ clickIt }) {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   function sendMail() {
     axios.post('/mail', {
@@ -21,11 +22,29 @@ function ContactForm({ clickIt }) {
     });
   }
 
+  let hamBurgerMenu;
+
+  if (mobileMenu === true) {
+    hamBurgerMenu = (
+      <div className="fademobile">
+        <div className="hamburgerLinks">
+          <div className="mobilemenu">
+            <p className="shiftLeft">Home ----------</p>
+            <p className="shiftRight">---------- About</p>
+            <p className="shiftLeft">Projects ----------</p>
+            <p className="shiftRight">---------- Blog</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="contactPage">
       <div className="hamburger">
-        <img className="icon" src={Hamburger} alt="" />
+        <img className="icon" src={Hamburger} alt="" onClick={() => { if (mobileMenu === false) { setMobileMenu(true) } else { setMobileMenu(false) }}} />
       </div>
+      {hamBurgerMenu}
       <div className="navigate">
         <p />
         <p onClick={() => { clickIt(''); }}>Home</p>

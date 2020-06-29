@@ -7,6 +7,9 @@ import Contact from './contact';
 import About from './about';
 import Blog from './blog';
 import ContactForm from './contactMe';
+import AboutPage from './aboutPage';
+import ProjectsPage from './projectsPage';
+import BlogPage from './blogPage';
 
 class App extends React.Component {
   constructor(props) {
@@ -31,17 +34,31 @@ class App extends React.Component {
           <div className="chip">
             <WiresConnectorsTips />
             <Statement />
-            <Projects />
+            <Projects clickIt={this.changeModule} />
             <Contact clickIt={this.changeModule} />
-            <About />
-            <Blog />
+            <About clickIt={this.changeModule} />
+            <Blog clickIt={this.changeModule} />
           </div>
         </div>
       );
     }
+
     if (this.state.clicked === 'CONTACT') {
       display = <ContactForm clickIt={this.changeModule} />;
     }
+
+    if (this.state.clicked === 'ABOUT') {
+      display = <AboutPage clickIt={this.changeModule} />;
+    }
+
+    if (this.state.clicked === 'PROJECTS') {
+      display = <ProjectsPage clickIt={this.changeModule} />;
+    }
+
+    if (this.state.clicked === 'BLOG') {
+      display = <BlogPage clickIt={this.changeModule} />;
+    }
+
     return (
       <div>
         {display}

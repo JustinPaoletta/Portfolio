@@ -22,7 +22,7 @@ class About extends React.Component {
         <div className="aboutDatabit" />
 
         <div className="about">
-          <p>ABOUT</p>
+          <p onClick={(e) => this.props.clickIt(e.target.innerText)}>ABOUT</p>
         </div>
 
       </div>

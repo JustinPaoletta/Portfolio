@@ -27,7 +27,7 @@ class Blog extends React.Component {
         <div className="blogDatabit" />
 
         <div className="blog">
-          <p>BLOG</p>
+        <p onClick={(e) => this.props.clickIt(e.target.innerText)}>BLOG</p>
         </div>
 
       </div>

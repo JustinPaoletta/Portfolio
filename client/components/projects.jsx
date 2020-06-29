@@ -25,7 +25,7 @@ class Projects extends React.Component {
         <div className="projectDatabit" />
 
         <div className="projects">
-          <p>PROJECTS</p>
+        <p onClick={(e) => this.props.clickIt(e.target.innerText)}>PROJECTS</p>
         </div>
 
       </div>

@@ -39,9 +39,9 @@ function ContactForm({ clickIt }) {
         <div className="hamburgerLinks">
           <div className="mobilemenu">
             <p onClick={() => { clickIt(''); }} className="shift">Home ----------</p>
-            <p className="shift">---------- About</p>
-            <p className="shift">Projects ----------</p>
-            <p className="shift">---------- Blog</p>
+            <p onClick={() => { clickIt('ABOUT'); }} className="shift">---------- About</p>
+            <p onClick={() => { clickIt('PROJECTS'); }} className="shift">Projects ----------</p>
+            <p onClick={() => { clickIt('BLOG'); }} className="shift">---------- Blog</p>
           </div>
         </div>
       </div>
@@ -78,9 +78,9 @@ function ContactForm({ clickIt }) {
       <div className="navigate">
         <p />
         <p onClick={() => { clickIt(''); }}>Home</p>
-        <p>About</p>
-        <p>Projects</p>
-        <p>Blog</p>
+        <p onClick={() => { clickIt('ABOUT'); }}>About</p>
+        <p onClick={() => { clickIt('PROJECTS'); }}>Projects</p>
+        <p onClick={() => { clickIt('BLOG'); }} >Blog</p>
       </div>
       <h1 className="contactHeader">LET&apos;S CONNECT</h1>
       <div className="contactMessage">

@@ -368,7 +368,7 @@ server.post('/mail', (req, res) => {
                         <tr>
                           <td style="padding-right: 10px;">
                             <h3 style="text-align: center;" class="heading">About</h3>
-                            <p style="text-align: left; margin-left: 5%"><span style="margin-left: 10%">I</span> build clear, and attractive applications that improve others lives. Let's make something great together.</p>
+                            <p style="text-align: left; margin-left: 5%"><span style="margin-left: 10%">I</span> build clear, attractive applications that improve others lives. Let's make something great together.</p>
                           </td>
                         </tr>
                       </table>

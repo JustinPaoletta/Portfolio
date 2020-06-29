@@ -5,6 +5,7 @@ import GitHub from '../../public/github.png';
 import Medium from '../../public/medium.png';
 import Twitter from '../../public/twitter.png';
 import Hamburger from '../../public/hamburger.png';
+import '../../public/component-styles/contactMe.css';
 
 function ContactForm({ clickIt }) {
   const [name, setName] = useState('');
@@ -12,6 +13,7 @@ function ContactForm({ clickIt }) {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   function sendMail() {
     axios.post('/mail', {
@@ -19,7 +21,14 @@ function ContactForm({ clickIt }) {
       to: 'justinpaoletta@gmail.com',
       subject: subject,
       text: message,
-    });
+    })
+      .then((results) => {
+        console.log(results);
+        setSuccess(true);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }
 
   let hamBurgerMenu;
@@ -29,18 +38,39 @@ function ContactForm({ clickIt }) {
       <div className="fademobile">
         <div className="hamburgerLinks">
           <div className="mobilemenu">
-            <p className="shiftLeft">Home ----------</p>
-            <p className="shiftRight">---------- About</p>
-            <p className="shiftLeft">Projects ----------</p>
-            <p className="shiftRight">---------- Blog</p>
+            <p onClick={() => { clickIt(''); }} className="shift">Home ----------</p>
+            <p className="shift">---------- About</p>
+            <p className="shift">Projects ----------</p>
+            <p className="shift">---------- Blog</p>
           </div>
         </div>
       </div>
     );
   }
 
+  let myForm = (
+    <div>
+      <form className="ContactForm" onSubmit={(e) => { setName(''); setEmail(''); setSubject(''); setMessage(''); e.preventDefault(); sendMail(); }}>
+        <input type="text" maxLength="32" name="first_name" pattern="[A-Za-z]{2,32}" placeholder="Name" value={name} required onChange={(e) => { setName(e.target.value); }} />
+        <input type="email" required placeholder="Email" value={email} onChange={(e) => { setEmail(e.target.value); }} />
+        <input type="text" maxLength="32" name="subject" pattern="^.{2,32}$" placeholder="Subject" value={subject} required onChange={(e) => { setSubject(e.target.value); }} />
+        <textarea type="text" maxLength="2000" name="message" pattern="^.{2,2000}$" placeholder="Message ..." value={message} required onChange={(e) => { setMessage(e.target.value); }} />
+        <input className="sendEmail" type="submit" />
+      </form>
+    </div>
+  );
+
+  if (success === true) {
+    myForm = (
+      <div className="thanks">
+        <p>Thank You For Reaching Out!</p>
+        <p>Please Check Your Inbox</p>
+      </div>
+    );
+  }
+
   return (
-    <div className="contactPage">
+    <div>
       <div className="hamburger">
         <img className="icon" src={Hamburger} alt="" onClick={() => { if (mobileMenu === false) { setMobileMenu(true) } else { setMobileMenu(false) }}} />
       </div>
@@ -60,13 +90,7 @@ function ContactForm({ clickIt }) {
       </div>
       <div className="FormContainer">
         <p />
-        <form className="ContactForm" onSubmit={(e) => { e.preventDefault(); sendMail(); console.log(name, email, subject, message); }}>
-          <input placeholder="Name" value={name} onChange={(e) => { setName(e.target.value); }} />
-          <input placeholder="Email" value={email} onChange={(e) => { setEmail(e.target.value); }} />
-          <input placeholder="Subject" value={subject} onChange={(e) => { setSubject(e.target.value); }} />
-          <textarea placeholder="Message ..." value={message} onChange={(e) => { setMessage(e.target.value); }} />
-          <input className="sendEmail" type="submit" />
-        </form>
+        {myForm}
         <p />
       </div>
       <p className="imSocial">Follow Me</p>

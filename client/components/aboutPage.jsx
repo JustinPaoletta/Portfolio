@@ -34,7 +34,43 @@ function AboutPage({ clickIt }) {
         <p onClick={() => { clickIt('PROJECTS'); }}>Projects</p>
         <p onClick={() => { clickIt('BLOG'); }}>Blog</p>
       </div>
-      <p>ABOUT</p>
+      <div className="aboutSection">
+        <img className="ME" src="https://scontent.ftpa1-2.fna.fbcdn.net/v/t1.0-9/15977498_10154223311260382_8903881252913326014_n.jpg?_nc_cat=102&_nc_sid=8bfeb9&_nc_ohc=qaHs86RW-joAX-h3FMz&_nc_ht=scontent.ftpa1-2.fna&oh=116bb57a34384c5432a41c4573be83f2&oe=5F1DFF78" />
+        <div className="content">
+          <h1 className="aboutTitle">Hi I&apos;m Justin Paoletta</h1>
+          <div className="movable">
+            <span>
+              <h3>Full-Stack Software Engineer</h3>
+              <h3>Husband & Dog Dad of 2</h3>
+              <h3>Lifelong Learner</h3>
+              <h3>Science Enthusiast</h3>
+              <h3>Thrill Seeker</h3>
+              <h3>Die-Hard Saints Fan</h3>
+            </span>
+            <div className="summary">
+              <p className="indent">
+                As a software engineer I see code as a way I can make a concrete contribution to the world.  I love to problem solve and I love to create.  I see code as a way for me to be the artist I always wanted to be,  just with the keyboard as my paintbrush.  Seeing others interact with something I have built brings me a high level of satisfaction, and I strive to create clear, efficient and attractive applications for my users.
+              </p>
+              <p className="indent">
+                I seek out and thrive in environments where I’m intellectually stimulated, and I know that with software development the learning never really ends.
+              </p>
+              <p className="indent">
+                I’d love to bring my passion for learning, and drive for producing quality work to your team to help achieve its goals.
+                So if you are looking to add talent to your team please reach out!
+              </p>
+              <p>
+                Frontend: React, Styled Components, jQuery, JavaScript, CSS3, Sass, HTML5
+              </p>
+              <p>
+                Backend: MongoDB, Mongoose, MySQL, PostgreSQL, Express, Node.js
+              </p>
+              <p>
+                Other: Git, npm, Jest, Webpack, Babel, AWS (S3, EC2, Elastic Load Balancing)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

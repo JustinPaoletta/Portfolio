@@ -418,11 +418,9 @@ body {
 
 /* LOGO */
 
-/* .myLogo {
-  position: absolute;
-  height:100px;
-  bottom: 0;
+.mylogo {
+  height:70px;
+  position: fixed;
   right: 0;
-  top: 0;
-  left:0;
-} */
+  bottom: 0;
+}

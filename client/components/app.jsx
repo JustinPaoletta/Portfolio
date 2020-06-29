@@ -10,6 +10,7 @@ import ContactForm from './contactMe';
 import AboutPage from './aboutPage';
 import ProjectsPage from './projectsPage';
 import BlogPage from './blogPage';
+import MyLogo from '../../public/mylogo.png';
 
 class App extends React.Component {
   constructor(props) {
@@ -31,6 +32,7 @@ class App extends React.Component {
     if (this.state.clicked === '') {
       display = (
         <div className="motherBoard">
+          <img src={MyLogo} className="mylogo" />
           <div className="chip">
             <WiresConnectorsTips />
             <Statement />

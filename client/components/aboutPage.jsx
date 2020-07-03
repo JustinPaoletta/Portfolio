@@ -35,7 +35,9 @@ function AboutPage({ clickIt }) {
         <p onClick={() => { clickIt('BLOG'); }}>Blog</p>
       </div>
       <div className="aboutSection">
+        <div>
         <img className="ME" src="https://scontent.ftpa1-2.fna.fbcdn.net/v/t1.0-9/15977498_10154223311260382_8903881252913326014_n.jpg?_nc_cat=102&_nc_sid=8bfeb9&_nc_ohc=qaHs86RW-joAX-h3FMz&_nc_ht=scontent.ftpa1-2.fna&oh=116bb57a34384c5432a41c4573be83f2&oe=5F1DFF78" />
+        </div>
         <div className="content">
           <h1 className="aboutTitle">Hi I&apos;m Justin Paoletta</h1>
           <div className="movable">

@@ -2,15 +2,15 @@
 
 .aboutLine1 {
   border: gray solid 5px;
-  margin-top: -75px;
-  margin-left: -190px;
+  margin-top: -95px;
+  margin-left: -180px;
   position: absolute;
   width:170px;
 }
 
 .aboutLine1Turn {
   border: gray solid 5px;
-  margin-top: -255px;
+  margin-top: -265px;
   margin-left: -100px;
   position: absolute;
   height:170px;
@@ -18,27 +18,27 @@
 
 .aboutLine1ATurn {
   border: gray solid 5px;
-  margin-top: -265px;
-  margin-left: -200px;
+  margin-top: -275px;
+  margin-left: -190px;
   position: absolute;
   width:100px;
 }
 
 .aboutSocketMain {
   border: solid 5px gray;
-  height: 20px;
-  width: 20px;
-  margin-top: -275px;
-  margin-left: -230px;
+  height: 30px;
+  width: 30px;
+  margin-top: -285px;
+  margin-left: -220px;
   position: absolute;
 }
 
 .aboutL1ASocket{
   border: solid 5px gray;
-  height: 20px;
-  width: 20px;
-  margin-top: -85px;
-  margin-left: -220px;
+  height: 30px;
+  width: 30px;
+  margin-top: -105px;
+  margin-left: -210px;
   position: absolute;
   background-color: white;
   -webkit-animation-name: colorchange2B;
@@ -53,7 +53,7 @@
 
 .aboutDatabit {
   border: solid 10px #62DAFE;
-  margin-top: -80px;
+  margin-top: -100px;
   margin-left: -30px;
   position: absolute;
   -webkit-animation-name: datastream2;
@@ -68,7 +68,8 @@
 
 .about {
   position: absolute;
-  margin-top: -400px;
+  font-family: 'Russo One', sans-serif;
+  margin-top: -395px;
   margin-left: -310px;
   font-size: 2.5rem;
   opacity: 0;
@@ -88,18 +89,18 @@
 @-webkit-keyframes datastream2 {
 
   30% {
-    margin-top: -80px;
+    margin-top: -100px;
     margin-left: -105px;
   }
 
   50% {
-    margin-top: -270px;
+    margin-top: -280px;
     margin-left: -105px;
   }
 
   100% {
-    margin-top: -270px;
-    margin-left: -225px;
+    margin-top: -280px;
+    margin-left: -215px;
   }
 
 }
@@ -107,18 +108,18 @@
 @keyframes datastream2 {
 
   30% {
-    margin-top: -80px;
+    margin-top: -100px;
     margin-left: -105px;
   }
 
   50% {
-    margin-top: -270px;
+    margin-top: -280px;
     margin-left: -105px;
   }
 
   100% {
-    margin-top: -270px;
-    margin-left: -225px;
+    margin-top: -280px;
+    margin-left: -215px;
   }
 
 }

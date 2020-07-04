@@ -2,26 +2,26 @@
 
 .projectLine1 {
   border: gray solid 5px;
-  margin-top: -125px;
-  margin-left: 260px;
+  margin-top: -145px;
+  margin-left: 240px;
   position: absolute;
   width:150px;
 }
 
 .projectLine1Turn {
   border: gray solid 5px;
-  margin-top: -185px;
-  margin-left: 340px;
+  margin-top: -195px;
+  margin-left: 320px;
   position: absolute;
   height:50px;
 }
 
 .projectL1TSocket {
   border: solid 5px gray;
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   margin-top: -215px;
-  margin-left: 330px;
+  margin-left: 310px;
   position: absolute;
   background-color: white;
   -webkit-animation-name: colorchange;
@@ -36,35 +36,35 @@
 
 .projectLine2 {
   border: gray solid 5px;
-  margin-top: -275px;
-  margin-left: 420px;
+  margin-top: -285px;
+  margin-left: 390px;
   position: absolute;
   height:150px;
 }
 
 .projectSocketMain {
   border: solid 5px gray;
-  height: 20px;
-  width: 20px;
-  margin-top: -300px;
-  margin-left: 410px;
+  height: 30px;
+  width: 30px;
+  margin-top: -315px;
+  margin-left: 380px;
   position: absolute;
 }
 
 .projectLine2Turn {
   border: gray solid 5px;
   margin-top: -185px;
-  margin-left: 430px;
+  margin-left: 390px;
   position: absolute;
   width:50px;
 }
 
 .projectL2TSocket {
   border: solid 5px gray;
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   margin-top: -195px;
-  margin-left: 490px;
+  margin-left: 440px;
   position: absolute;
   background-color: white;
   -webkit-animation-name: colorchange2E;
@@ -80,8 +80,8 @@
 .projectDatabit{
   z-index:1;
   border: solid 10px #62DAFE;
-  margin-top: -130px;
-  margin-left: 260px;
+  margin-top: -150px;
+  margin-left: 240px;
   position: absolute;
   -webkit-animation-name: datastream;
   -webkit-animation-duration: 3s;
@@ -96,7 +96,8 @@
 
 .projects {
   position: absolute;
-  margin-top: -400px;
+  font-family: 'Russo One', sans-serif;
+  margin-top: -395px;
   margin-left: 350px;
   font-size: 2.5rem;
   opacity: 0;
@@ -116,13 +117,13 @@
 @-webkit-keyframes datastream {
 
   50% {
-    margin-top: -130px;
-    margin-left: 415px;
+    margin-top: -150px;
+    margin-left: 385px;
   }
 
   100% {
-    margin-top: -295px;
-    margin-left: 415px;
+    margin-top: -310px;
+    margin-left: 385px;
   }
 
 }
@@ -130,13 +131,13 @@
 @keyframes datastream {
 
   50% {
-    margin-top: -130px;
-    margin-left: 415px;
+    margin-top: -150px;
+    margin-left: 385px;
   }
 
   100% {
-    margin-top: -295px;
-    margin-left: 415px;
+    margin-top: -310px;
+    margin-left: 385px;
   }
 
 }

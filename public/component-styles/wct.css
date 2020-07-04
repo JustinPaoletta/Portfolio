@@ -2,29 +2,29 @@
 
 .wire1 {
   position: absolute;
-  height: 190px;
+  height: 170px;
   width: 2px;
   background-color: rgb(131, 131, 131);
   margin-left: 40px;
-  margin-top: -200px;
+  margin-top: -180px;
 }
 
 .wire2 {
   position: absolute;
-  height: 190px;
+  height: 170px;
   width: 2px;
   background-color: rgb(131, 131, 131);
   margin-left: 60px;
-  margin-top: -200px;
+  margin-top: -180px;
 }
 
 .wire3 {
   position: absolute;
-  height: 190px;
+  height: 170px;
   width: 2px;
   background-color: rgb(131, 131, 131);
   margin-left: 80px;
-  margin-top: -200px;
+  margin-top: -180px;
 }
 
 .wire4 {
@@ -33,7 +33,7 @@
   width: 2px;
   background-color: rgb(131, 131, 131);
   margin-left: 125px;
-  margin-top: 260px;
+  margin-top: 240px;
 }
 
 .wire5 {
@@ -42,22 +42,22 @@
   width: 2px;
   background-color: rgb(131, 131, 131);
   margin-left: 165px;
-  margin-top: 260px;
+  margin-top: 240px;
 }
 
 .connector1{
   border: solid 5px rgb(43, 43, 43);
   position: absolute;
-  margin-left: 260px;
+  margin-left: 240px;
   width:20px;
-  margin-top: 220px;
+  margin-top: 210px;
 }
 
 .connector2{
   border: solid 5px rgb(43, 43, 43);
   position: absolute;
-  margin-left: 260px;
-  margin-top: 180px;
+  margin-left: 240px;
+  margin-top: 170px;
   width:20px;
 }
 
@@ -66,14 +66,14 @@
   position: absolute;
   margin-left: 180px;
   height:20px;
-  margin-top: 260px;
+  margin-top: 240px;
 }
 
 .connector4{
   border: solid 5px rgb(43, 43, 43);
   position: absolute;
   margin-left: 140px;
-  margin-top: 260px;
+  margin-top: 240px;
   height:20px;
 }
 
@@ -82,21 +82,21 @@
   position: absolute;
   margin-left: 100px;
   height:20px;
-  margin-top: 260px;
+  margin-top: 240px;
 }
 
 .connector6{
   border: solid 5px rgb(43, 43, 43);
   position: absolute;
   margin-left: 60px;
-  margin-top: 260px;
+  margin-top: 240px;
   height:20px;
 }
 
 .connector7{
   border: solid 5px rgb(43, 43, 43);
   position: absolute;
-  margin-left: -40px;
+  margin-left: -30px;
   width:20px;
   margin-top: 20px;
 }
@@ -104,7 +104,7 @@
 .connector8{
   border: solid 5px rgb(43, 43, 43);
   position: absolute;
-  margin-left: -40px;
+  margin-left: -30px;
   margin-top: 80px;
   width:20px;
 }
@@ -112,8 +112,8 @@
 .connector9{
   border: solid 5px rgb(43, 43, 43);
   position: absolute;
-  margin-left: -40px;
-  margin-top: 220px;
+  margin-left: -30px;
+  margin-top: 210px;
   width:20px;
 }
 
@@ -121,7 +121,7 @@
   border: solid 5px rgb(43, 43, 43);
   position: absolute;
   margin-left: 120px;
-  margin-top: -40px;
+  margin-top: -30px;
   height:20px;
 }
 
@@ -129,7 +129,7 @@
   border: solid 5px rgb(43, 43, 43);
   position: absolute;
   margin-left: 160px;
-  margin-top: -40px;
+  margin-top: -30px;
   height:20px;
 }
 
@@ -137,7 +137,7 @@
   border: solid 5px rgb(43, 43, 43);
   position: absolute;
   margin-left: 200px;
-  margin-top: -40px;
+  margin-top: -30px;
   height:20px;
 }
 
@@ -148,7 +148,7 @@
   background-color: rgb(64, 67, 255);
   position: absolute;
   margin-left: 39px;
-  margin-top: -202px;
+  margin-top: -182px;
 }
 
 .tip2 {
@@ -157,7 +157,7 @@
   background-color: rgb(255, 255, 107);
   position: absolute;
   margin-left: 59px;
-  margin-top: -202px;
+  margin-top: -182px;
 }
 
 .tip3 {
@@ -166,7 +166,7 @@
   background-color: rgb(64, 67, 255);
   position: absolute;
   margin-left: 79px;
-  margin-top: -202px;
+  margin-top: -182px;
 }
 
 .tip4 {
@@ -175,7 +175,7 @@
   background-color: rgb(64, 67, 255);
   position: absolute;
   margin-left: 124px;
-  margin-top: 451px;
+  margin-top: 431px;
 }
 
 .tip5 {
@@ -184,5 +184,5 @@
   background-color: rgb(255, 255, 107);
   position: absolute;
   margin-left: 164px;
-  margin-top: 451px;
+  margin-top: 431px;
 }

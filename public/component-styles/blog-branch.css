@@ -2,7 +2,7 @@
 
 .blogLine1 {
   border: gray solid 5px;
-  margin-top: 45px;
+  margin-top: 25px;
   margin-left: 20px;
   position: absolute;
   height:56px;
@@ -10,40 +10,40 @@
 
 .blogLine1Turn {
   border: gray solid 5px;
-  margin-top: 101px;
-  margin-left: -270px;
+  margin-top: 81px;
+  margin-left: -250px;
   position: absolute;
   width:280px;
 }
 
 .blogLine1ATurn {
   border: gray solid 5px;
-  margin-top: 101px;
-  margin-left: -280px;
+  margin-top: 81px;
+  margin-left: -260px;
   position: absolute;
   height:80px;
 }
 
 .blogLine1BTurn {
   border: gray solid 5px;
-  margin-top: 181px;
-  margin-left: -270px;
+  margin-top: 161px;
+  margin-left: -260px;
   position: absolute;
   width:130px;
 }
 
 .blogSocketMain{
   border: solid 5px gray;
-  height: 20px;
-  width: 20px;
-  margin-top: 171px;
+  height: 30px;
+  width: 30px;
+  margin-top: 151px;
   margin-left: -130px;
   position: absolute;
 }
 
 .blogLine1Branch1 {
   border: gray solid 5px;
-  margin-top: 31px;
+  margin-top: 21px;
   margin-left: -111px;
   position: absolute;
   height:60px;
@@ -51,7 +51,7 @@
 
 .blogLine1Branch2 {
   border: gray solid 5px;
-  margin-top: 51px;
+  margin-top: 41px;
   margin-left: -191px;
   position: absolute;
   height:40px;
@@ -59,8 +59,8 @@
 
 .blogL1B1Socket{
   border: solid 5px gray;
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   margin-top: 0px;
   margin-left: -120px;
   position: absolute;
@@ -77,8 +77,8 @@
 
 .blogL1B2Socket{
   border: solid 5px gray;
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   margin-top: 30px;
   margin-left: -200px;
   position: absolute;
@@ -95,7 +95,7 @@
 
 .blogDatabit {
   border: solid 10px #62DAFE;
-  margin-top: 51px;
+  margin-top: 26px;
   margin-left: 15px;
   position: absolute;
   -webkit-animation-name: datastream3;
@@ -111,7 +111,8 @@
 
 .blog {
   position: absolute;
-  margin-top: 185px;
+  font-family: 'Russo One', sans-serif;
+  margin-top: 205px;
   margin-left: -310px;
   font-size: 2.5rem;
   opacity: 0;
@@ -236,22 +237,22 @@
 @-webkit-keyframes datastream3 {
 
   10% {
-    margin-top: 96px;
+    margin-top: 76px;
     margin-left: 15px;
   }
 
   60% {
-    margin-top: 96px;
-    margin-left: -285px;
+    margin-top: 76px;
+    margin-left: -265px;
   }
 
   75% {
-    margin-top: 176px;
-    margin-left: -285px;
+    margin-top: 156px;
+    margin-left: -265px;
   }
 
   100% {
-    margin-top: 176px;
+    margin-top: 156px;
     margin-left: -125px;
   }
 
@@ -260,22 +261,22 @@
 @keyframes datastream3 {
 
   10% {
-    margin-top: 96px;
+    margin-top: 76px;
     margin-left: 15px;
   }
 
   60% {
-    margin-top: 96px;
-    margin-left: -285px;
+    margin-top: 76px;
+    margin-left: -265px;
   }
 
   75% {
-    margin-top: 176px;
-    margin-left: -285px;
+    margin-top: 156px;
+    margin-left: -265px;
   }
 
   100% {
-    margin-top: 176px;
+    margin-top: 156px;
     margin-left: -125px;
   }
 

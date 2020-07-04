@@ -2,16 +2,16 @@
 
 .contactLine1 {
   border: gray solid 5px;
-  margin-top: -75px;
-  margin-left: 260px;
+  margin-top: -95px;
+  margin-left: 240px;
   position: absolute;
   width:130px;
 }
 
 .contactLine2 {
   border: gray solid 5px;
-  margin-top: -75px;
-  margin-left: 400px;
+  margin-top: -95px;
+  margin-left: 370px;
   position: absolute;
   height:170px;
 }
@@ -19,17 +19,17 @@
 .contactLine2ATurn {
   border: gray solid 5px;
   margin-top: 65px;
-  margin-left: 410px;
+  margin-left: 380px;
   position: absolute;
   width:100px;
 }
 
 .contactL2ATSocket{
   border: solid 5px gray;
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   margin-top: 55px;
-  margin-left: 520px;
+  margin-left: 480px;
   position: absolute;
   background-color: white;
   -webkit-animation-name: colorchange2C;
@@ -45,16 +45,16 @@
 .contactLine2BTurn {
   border: gray solid 5px;
   margin-top: 105px;
-  margin-left: 300px;
+  margin-left: 320px;
   position: absolute;
   width:100px;
 }
 
 .contactL2BTSocket{
   border: solid 5px gray;
-  height: 20px;
-  width: 20px;
-  margin-top: 105px;
+  height: 30px;
+  width: 30px;
+  margin-top: 95px;
   margin-left: 300px;
   position: absolute;
   background-color: white;
@@ -71,25 +71,25 @@
 .contactLine2CTurn {
   border: gray solid 5px;
   margin-top: 75px;
-  margin-left: 460px;
+  margin-left: 420px;
   position: absolute;
   height:80px;
 }
 
 .contactSocketMain{
   border: solid 5px gray;
-  height: 20px;
-  width: 20px;
-  margin-top: 165px;
-  margin-left: 450px;
+  height: 30px;
+  width: 30px;
+  margin-top: 155px;
+  margin-left: 410px;
   position: absolute;
 }
 
 .contactDatabit {
   z-index: 1;
   border: solid 10px #62DAFE;
-  margin-top: -81px;
-  margin-left: 260px;
+  margin-top: -101px;
+  margin-left: 240px;
   position: absolute;
   -webkit-animation-name: datastream4;
   -webkit-animation-duration: 4.5s;
@@ -103,7 +103,8 @@
 
 .contact {
   position: absolute;
-  margin-top: 185px;
+  font-family: 'Russo One', sans-serif;
+  margin-top: 205px;
   margin-left: 380px;
   font-size: 2.5rem;
   opacity: 0;
@@ -124,23 +125,23 @@
 @-webkit-keyframes datastream4 {
 
   10% {
-    margin-top: -81px;
-    margin-left: 395px;
+    margin-top: -101px;
+    margin-left: 365px;
   }
 
   60% {
     margin-top: 61px;
-    margin-left: 395px;
+    margin-left: 365px;
   }
 
   75% {
     margin-top: 61px;
-    margin-left: 455px;
+    margin-left: 415px;
   }
 
   100% {
-    margin-top: 170px;
-    margin-left: 455px;
+    margin-top: 160px;
+    margin-left: 415px;
   }
 
 }
@@ -148,23 +149,23 @@
 @keyframes datastream4 {
 
   10% {
-    margin-top: -81px;
-    margin-left: 395px;
+    margin-top: -101px;
+    margin-left: 365px;
   }
 
   60% {
     margin-top: 61px;
-    margin-left: 395px;
+    margin-left: 365px;
   }
 
   75% {
     margin-top: 61px;
-    margin-left: 455px;
+    margin-left: 415px;
   }
 
   100% {
-    margin-top: 170px;
-    margin-left: 455px;
+    margin-top: 160px;
+    margin-left: 415px;
   }
 
 }

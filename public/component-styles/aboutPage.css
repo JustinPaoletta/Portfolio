@@ -1,0 +1,262 @@
+body {
+    margin-left: 1vw;
+}
+
+.hamburgerLinks {
+    width: 101vw;
+}
+
+.aboutSection {
+    height:88%;
+    width:80%;
+    margin-left: 12vw;
+    overflow-y: scroll;
+    background-color: white;
+    margin-top: 1%;
+    position: fixed;
+    display: grid; 
+    grid-template: 
+    'me headers'
+    'summary summary';
+}
+
+.image {
+    grid-area: me;
+}
+
+.ME {
+    margin-top: 5%;
+    height:370px;
+    margin-left: 0px;
+}
+
+.headers {
+    grid-area:headers;
+    margin-left: -75px;
+}
+
+.summary {
+    margin-top: 5%;
+    width:80vw;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-area: summary;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-bottom: 10vh;
+}
+
+.aboutTitle {
+    margin-top: 10%;
+}
+
+
+.indent {
+    text-indent:40px;
+}
+
+.fademobile {
+    z-index: 1;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1201px) and (max-width: 4000px) and (-webkit-min-device-pixel-ratio: 1) {
+
+  
+}
+  
+@media screen and (min-width: 1000px) and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 999px) and (-webkit-min-device-pixel-ratio: 1) {
+
+    .aboutTitle {
+        margin-top: 6%;
+        font-size: 1.8rem;
+    }
+
+    h5 {
+        font-size: .7rem;
+    }
+
+    .ME {
+        height: 220px;
+    }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 999px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
+
+
+    .ME {
+        height: 250px;
+    }
+
+    .aboutTitle {
+        margin-top: 6%;
+        font-size: 1.8rem;
+    }
+
+    h5 {
+        font-size: .7rem;
+    }
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 699px) and (-webkit-min-device-pixel-ratio: 1) {
+
+    .ME {
+        height: 200px;
+    }
+
+    .aboutTitle {
+        margin-top: 6%;
+        font-size: 1.4rem;
+        margin-left: 2vw;
+    }
+
+    h5 {
+        margin-left: 2vw;
+        font-size: .7rem;
+    }
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 699px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
+
+    .aboutSection {
+        grid-template: 
+        'me me'
+        'headers headers'
+        'summary summary';
+    }
+    
+    .image {
+        grid-area: me;
+    }
+    
+    .ME {
+        margin-top: 12%;
+        height:300px;
+        margin-left: 0px;
+    }
+    
+    .headers {
+        grid-area:headers;
+        margin-left: 0px;
+    }
+
+    .aboutTitle {
+        font-size: 1.4rem;
+    }
+    
+    h5 {
+        font-size: .85rem; 
+    }
+
+    .indent {
+        text-indent:15px;
+    }
+
+    .summary {
+        margin-top: 5vh;
+        font-size: .9rem;
+    }
+
+}
+
+@media screen and (min-width: 358px) and (max-width: 399px) and (-webkit-min-device-pixel-ratio: 1) {
+
+
+}
+
+@media screen and (min-width: 358px) and (max-width: 399px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
+
+    .aboutSection {
+        grid-template: 
+        'me me'
+        'headers headers'
+        'summary summary';
+    }
+    
+    .image {
+        grid-area: me;
+    }
+    
+    .ME {
+        margin-top: 12%;
+        height:300px;
+        margin-left: 0px;
+    }
+    
+    .headers {
+        grid-area:headers;
+        margin-left: 0px;
+    }
+
+    .aboutTitle {
+        font-size: 1.3rem;
+    }
+    
+    h5 {
+        font-size: .8rem; 
+    }
+
+    .indent {
+        text-indent:15px;
+    }
+
+    .summary {
+        margin-top: 5vh;
+        font-size: .9rem;
+    }
+
+
+}
+
+@media screen and (min-width: 100px) and (max-width: 357px) and (-webkit-min-device-pixel-ratio: 1) {
+
+    .aboutSection {
+        grid-template: 
+        'me me'
+        'headers headers'
+        'summary summary';
+    }
+    
+    .image {
+        grid-area: me;
+    }
+    
+    .ME {
+        margin-top: 12%;
+        height:300px;
+        margin-left: 0px;
+    }
+    
+    .headers {
+        grid-area:headers;
+        margin-left: 0px;
+    }
+
+    .aboutTitle {
+        font-size: 1.2rem;
+    }
+    
+    h5 {
+        font-size: .7rem; 
+    }
+
+    .indent {
+        text-indent:15px;
+    }
+
+    .summary {
+        margin-top: 5vh;
+        font-size: .9rem;
+    }
+
+}

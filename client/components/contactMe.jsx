@@ -93,7 +93,7 @@ function ContactForm({ clickIt }) {
         {myForm}
         <p />
       </div>
-      <p className="imSocial">Follow Me</p>
+      {/* <p className="imSocial">Follow Me</p> */}
       <div className="icons">
         <a href="https://www.linkedin.com/in/justin-paoletta/"><img src={Linkedin} alt="" /></a>
         <a href="https://github.com/JustinPaoletta"><img src={GitHub} alt="" /></a>

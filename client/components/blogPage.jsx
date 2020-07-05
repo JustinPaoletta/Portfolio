@@ -22,34 +22,12 @@ class BlogPage extends React.Component {
   }
 
   handleClick(value) {
-    if (value === 0) {
-      console.log(value)
-      this.setState({
-        featuredContent: MediumPosts[0][1],
-      })
-      console.log(this.state)
-    }
-    if (value === 5) {
-      console.log(value)
-      this.setState({
-        featuredContent: MediumPosts[5][1],
-      })
-      console.log(this.state)
-    }
-    if (value === 10) {
-      console.log(value)
-      this.setState({
-        featuredContent: MediumPosts[10][1],
-      })
-      console.log(this.state)
-    }
+    this.setState({
+      featuredContent: MediumPosts[value][1],
+    })
   }
 
   render() {
-
-    let allPosts = MediumPosts.map((post) => {
-      return post[1]
-    })
   
     let blogPosts;
 

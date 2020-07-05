@@ -1,7 +1,7 @@
 import React from 'react';
 
 export let MediumPosts = [
-    ['Algorithm — quickSort', <iframe src="https://api.microlink.io?url=https%3A%2F%2Fmedium.com%2Falgorithm-series%2Falgorithm-quicksort-1a86c3a3c0a6&pdf=true&meta=false&embed=pdf.url"></iframe>],
+    ['Algorithm — quickSort', <iframe src="https://drive.google.com/file/d/1KL6Adf2pX_cVANfGgQrCMvU7oiZsWmku/preview" width="640" height="480"></iframe>],
     ['Algorithm — bubbleSort', <blockquote className="embedly-card"><h4><a href="https://medium.com/algorithm-series/algorithm-bubblesort-91e53b639be3">Algorithm - bubbleSort</a></h4><p>Solved with javascript bubbleSort([2,5,3]) returns [2, 3, 5] bubbleSort([4,3,7,2,1]) returns [1, 2, 3, 4, 7] None you need to worry about accounting for First let's layout the skeleton of this problem. It's a pretty common pattern you will see when using recursion in your code.</p></blockquote>],
     ['Algorithm — commonLastVowel', <blockquote className="embedly-card"><h4><a href="https://medium.com/algorithm-series/algorithm-commonlastvowel-95176d35717c">Algorithm - commonLastVowel</a></h4><p>Nothing to worry about here we are only taking in strings that will have a most common last vowel, so we won't ever run into a case where we have more than one most common. The first thing we will do...</p></blockquote>],
     ['Algorithm — fibonacciNum', <blockquote className="embedly-card"><h4><a href="https://medium.com/algorithm-series/algorithm-fibonaccinum-bdf20c509816">Algorithm - fibonacciNum</a></h4><p>A Fibonacci sequence is a list of numbers that starts with 0 and 1, and every following number in the list is the sum of the previous two numbers. The first thing we need to do inside our function is...</p></blockquote>],

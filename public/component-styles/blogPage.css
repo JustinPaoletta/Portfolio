@@ -42,16 +42,7 @@
     font-weight: bold;
 }
 
-
-
-
-iframe {
-    width:60vw;
-    height:400vh;
-}
-
 .pdfContainer {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    height: 500px;
 }

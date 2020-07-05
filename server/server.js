@@ -2,6 +2,7 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 require('dotenv').config();
+const fetch = require("node-fetch");
 
 const server = express();
 
@@ -12,6 +13,7 @@ server.use(express.urlencoded());
 server.use(express.json());
 
 server.use(express.static('./public'));
+
 
 const transport = nodemailer.createTransport({
   service: 'gmail.com',
@@ -438,3 +440,5 @@ server.listen(port, (err) => {
     console.log(`Server now hosted on http://${host}:${port}`);
   }
 });
+
+

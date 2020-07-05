@@ -1,42 +1,122 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Hamburger from '../../public/hamburger.png';
+import BlogBit from '../../public/blogbit.png';
+import '../../public/component-styles/blogPage.css';
+import { MediumPosts } from './embed.jsx';
 
-function BlogPage({ clickIt }) {
-  const [mobileMenu, setMobileMenu] = useState(false);
+class BlogPage extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      mobileMenu: false,
+      myPosts: '',
+      featuredContent: '',
+    }
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-  let hamBurgerMenu;
+  componentDidMount(){
+    this.setState({
+      myPosts: MediumPosts,
+    })
+  }
 
-  if (mobileMenu === true) {
-    hamBurgerMenu = (
-      <div className="fademobile">
-        <div className="hamburgerLinks">
-          <div className="mobilemenu">
-            <p onClick={() => { clickIt(''); }} className="shift">Home ----------</p>
-            <p onClick={() => { clickIt('ABOUT'); }} className="shift">---------- About</p>
-            <p onClick={() => { clickIt('PROJECTS'); }} className="shift">Projects ----------</p>
-            <p onClick={() => { clickIt('CONTACT'); }} className="shift">---------- Contact</p>
+  handleClick(value) {
+    if (value === 0) {
+      console.log(value)
+      this.setState({
+        featuredContent: MediumPosts[0][1],
+      })
+      console.log(this.state)
+    }
+    if (value === 5) {
+      console.log(value)
+      this.setState({
+        featuredContent: MediumPosts[5][1],
+      })
+      console.log(this.state)
+    }
+    if (value === 10) {
+      console.log(value)
+      this.setState({
+        featuredContent: MediumPosts[10][1],
+      })
+      console.log(this.state)
+    }
+  }
+
+  render() {
+
+    let allPosts = MediumPosts.map((post) => {
+      return post[1]
+    })
+  
+    let blogPosts;
+
+    if (this.state.myPosts.length > 0) {
+      blogPosts = (
+        <div>
+          {this.state.myPosts.map((post, index) => {
+            return <div key={index} onClick={(e) => { this.handleClick(index);  }} className="posts">{post[0]}</div>
+          })}
+        </div>
+      )
+    }
+
+    let hamBurgerMenu;
+
+    if (this.state.mobileMenu === true) {
+      hamBurgerMenu = (
+        <div className="fademobile">
+          <div className="hamburgerLinks">
+            <div className="mobilemenu">
+              <p onClick={() => { this.props.clickIt(''); }} className="shift">Home ----------</p>
+              <p onClick={() => { this.props.clickIt('ABOUT'); }} className="shift">---------- About</p>
+              <p onClick={() => { this.props.clickIt('PROJECTS'); }} className="shift">Projects ----------</p>
+              <p onClick={() => { this.props.clickIt('CONTACT'); }} className="shift">---------- Contact</p>
+            </div>
+          </div>
+        </div>
+      );
+    }
+    return (
+      <div>
+        <div className="hamburger">
+          <img className="icon" src={Hamburger} alt="" onClick={() => { if (this.state.mobileMenu === false) { this.setState({
+            mobileMenu: true,
+          }) } else { this.setState({
+            mobileMenu: false,
+          }) }}} />
+        </div>
+        {hamBurgerMenu}
+        <div className="navigate">
+          <p />
+          <p onClick={() => { this.props.clickIt(''); }}>Home</p>
+          <p onClick={() => { this.props.clickIt('ABOUT'); }}>About</p>
+          <p onClick={() => { this.props.clickIt('PROJECTS'); }}>Projects</p>
+          <p onClick={() => { this.props.clickIt('CONTACT'); }}>Contact</p>
+        </div>
+        <div className="blogContainer">
+          <div className="sidebar">
+            <div className="sidebarscroll">
+              <h5 className="articles">Browse Articles</h5>
+              {blogPosts}
+            </div>
+          </div>
+          <div className="theBlog">
+            <div className="latest">
+              <h3>Coding With Justin:</h3>
+              
+            </div>
+            <div>{allPosts}</div>
+          </div> 
+          <div className="extracontent">
+            <img className="blogBit" src={BlogBit} />
           </div>
         </div>
       </div>
     );
-  }
-
-  return (
-    <div>
-      <div className="hamburger">
-        <img className="icon" src={Hamburger} alt="" onClick={() => { if (mobileMenu === false) { setMobileMenu(true) } else { setMobileMenu(false) }}} />
-      </div>
-      {hamBurgerMenu}
-      <div className="navigate">
-        <p />
-        <p onClick={() => { clickIt(''); }}>Home</p>
-        <p onClick={() => { clickIt('ABOUT'); }}>About</p>
-        <p onClick={() => { clickIt('PROJECTS'); }}>Projects</p>
-        <p onClick={() => { clickIt('CONTACT'); }}>Contact</p>
-      </div>
-      <p>BLOG</p>
-    </div>
-  );
+  }  
 }
 
 export default BlogPage;

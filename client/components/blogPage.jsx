@@ -83,7 +83,7 @@ class BlogPage extends React.Component {
           </div>
           <div className="theBlog">
             <div className="latest">
-              <h3>Coding With Justin:</h3>
+              <h3>Lets Learn Some Code:</h3>
               
             </div>
             <div className="pdfContainer">{this.state.featuredContent}</div>

@@ -10,7 +10,7 @@ class BlogPage extends React.Component {
     this.state = {
       mobileMenu: false,
       myPosts: '',
-      featuredContent: '',
+      featuredContent: MediumPosts[0][1],
     }
     this.handleClick = this.handleClick.bind(this);
   }
@@ -108,7 +108,7 @@ class BlogPage extends React.Component {
               <h3>Coding With Justin:</h3>
               
             </div>
-            <div>{allPosts}</div>
+            <div className="pdfContainer">{this.state.featuredContent}</div>
           </div> 
           <div className="extracontent">
             <img className="blogBit" src={BlogBit} />

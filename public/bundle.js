@@ -202,7 +202,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _public_hamburger_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../public/hamburger.png */ \"./public/hamburger.png\");\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _iterableToArrayLimit(arr, i) { if (typeof Symbol === \"undefined\" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\n\nfunction ProjectsPage(_ref) {\n  var clickIt = _ref.clickIt;\n\n  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useState\"])(false),\n      _useState2 = _slicedToArray(_useState, 2),\n      mobileMenu = _useState2[0],\n      setMobileMenu = _useState2[1];\n\n  var hamBurgerMenu;\n\n  if (mobileMenu === true) {\n    hamBurgerMenu = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"fademobile\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"hamburgerLinks\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"mobilemenu\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      onClick: function onClick() {\n        clickIt('');\n      },\n      className: \"shift\"\n    }, \"Home ----------\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      onClick: function onClick() {\n        clickIt('ABOUT');\n      },\n      className: \"shift\"\n    }, \"---------- About\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      onClick: function onClick() {\n        clickIt('BLOG');\n      },\n      className: \"shift\"\n    }, \"Blog ----------\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      onClick: function onClick() {\n        clickIt('CONTACT');\n      },\n      className: \"shift\"\n    }, \"---------- Contact\"))));\n  }\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"hamburger\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"img\", {\n    className: \"icon\",\n    src: _public_hamburger_png__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n    alt: \"\",\n    onClick: function onClick() {\n      if (mobileMenu === false) {\n        setMobileMenu(true);\n      } else {\n        setMobileMenu(false);\n      }\n    }\n  })), hamBurgerMenu, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"navigate\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n    onClick: function onClick() {\n      clickIt('');\n    }\n  }, \"Home\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n    onClick: function onClick() {\n      clickIt('ABOUT');\n    }\n  }, \"About\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n    onClick: function onClick() {\n      clickIt('BLOG');\n    }\n  }, \"Blog\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n    onClick: function onClick() {\n      clickIt('CONTACT');\n    }\n  }, \"Contact\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", null, \"PROJECTS\"));\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (ProjectsPage);\n\n//# sourceURL=webpack:///./client/components/projectsPage.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _public_hamburger_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../public/hamburger.png */ \"./public/hamburger.png\");\n/* harmony import */ var _public_eagleLake_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../public/eagleLake.png */ \"./public/eagleLake.png\");\n/* harmony import */ var _public_x_rsize_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../public/x-rsize.png */ \"./public/x-rsize.png\");\n/* harmony import */ var _public_naturalEats_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../public/naturalEats.png */ \"./public/naturalEats.png\");\n/* harmony import */ var _public_movieNight_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../public/movieNight.png */ \"./public/movieNight.png\");\n/* harmony import */ var _public_foodie_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../public/foodie.png */ \"./public/foodie.png\");\n/* harmony import */ var _public_projectOvernight_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../public/projectOvernight.png */ \"./public/projectOvernight.png\");\n/* harmony import */ var _public_solaris_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../public/solaris.png */ \"./public/solaris.png\");\n/* harmony import */ var _public_scienceClass_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../public/scienceClass.png */ \"./public/scienceClass.png\");\n/* harmony import */ var _public_component_styles_projectsPage_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../public/component-styles/projectsPage.css */ \"./public/component-styles/projectsPage.css\");\n/* harmony import */ var _public_component_styles_projectsPage_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_public_component_styles_projectsPage_css__WEBPACK_IMPORTED_MODULE_10__);\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _iterableToArrayLimit(arr, i) { if (typeof Symbol === \"undefined\" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\n\n\n\n\n\n\n\n\n\n\nfunction ProjectsPage(_ref) {\n  var clickIt = _ref.clickIt;\n\n  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useState\"])(false),\n      _useState2 = _slicedToArray(_useState, 2),\n      mobileMenu = _useState2[0],\n      setMobileMenu = _useState2[1];\n\n  var hamBurgerMenu;\n\n  if (mobileMenu === true) {\n    hamBurgerMenu = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"fademobile\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"hamburgerLinks\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"mobilemenu\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      onClick: function onClick() {\n        clickIt('');\n      },\n      className: \"shift\"\n    }, \"Home ----------\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      onClick: function onClick() {\n        clickIt('ABOUT');\n      },\n      className: \"shift\"\n    }, \"---------- About\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      onClick: function onClick() {\n        clickIt('BLOG');\n      },\n      className: \"shift\"\n    }, \"Blog ----------\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      onClick: function onClick() {\n        clickIt('CONTACT');\n      },\n      className: \"shift\"\n    }, \"---------- Contact\"))));\n  }\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"hamburger\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"img\", {\n    className: \"icon\",\n    src: _public_hamburger_png__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n    alt: \"\",\n    onClick: function onClick() {\n      if (mobileMenu === false) {\n        setMobileMenu(true);\n      } else {\n        setMobileMenu(false);\n      }\n    }\n  })), hamBurgerMenu, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"navigate\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n    onClick: function onClick() {\n      clickIt('');\n    }\n  }, \"Home\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n    onClick: function onClick() {\n      clickIt('ABOUT');\n    }\n  }, \"About\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n    onClick: function onClick() {\n      clickIt('BLOG');\n    }\n  }, \"Blog\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n    onClick: function onClick() {\n      clickIt('CONTACT');\n    }\n  }, \"Contact\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"projectsContainer\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"img\", {\n    className: \"appLogos logo1\",\n    src: _public_eagleLake_png__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"img\", {\n    className: \"appLogos logo2\",\n    src: _public_x_rsize_png__WEBPACK_IMPORTED_MODULE_3__[\"default\"]\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"img\", {\n    className: \"appLogos logo3\",\n    src: _public_naturalEats_png__WEBPACK_IMPORTED_MODULE_4__[\"default\"]\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"img\", {\n    className: \"appLogos logo4\",\n    src: _public_movieNight_png__WEBPACK_IMPORTED_MODULE_5__[\"default\"]\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"img\", {\n    className: \"appLogos logo5\",\n    src: _public_foodie_png__WEBPACK_IMPORTED_MODULE_6__[\"default\"]\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"img\", {\n    className: \"appLogos logo6\",\n    src: _public_projectOvernight_png__WEBPACK_IMPORTED_MODULE_7__[\"default\"]\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"img\", {\n    className: \"appLogos logo7\",\n    src: _public_solaris_png__WEBPACK_IMPORTED_MODULE_8__[\"default\"]\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"img\", {\n    className: \"appLogos logo8\",\n    src: _public_scienceClass_png__WEBPACK_IMPORTED_MODULE_9__[\"default\"]\n  })));\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (ProjectsPage);\n\n//# sourceURL=webpack:///./client/components/projectsPage.jsx?");
 
 /***/ }),
 
@@ -630,6 +630,17 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../.
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./public/component-styles/projectsPage.css":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./public/component-styles/projectsPage.css ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".projectsContainer {\\n    display: grid;\\n    grid-template: \\n    'logo1 logo2 logo3 logo4'\\n    'logo5 logo6 logo7 logo8';\\n    align-items: center;\\n    justify-content: center;\\n    margin-top: 10vh;\\n}\\n\\n.projectsContainer img{\\n    margin: 1rem;\\n    border: 1px solid black;\\n}\\n\\n.appLogos {\\n    height:200px;\\n   \\n}\\n\\n/* .logo1 {\\n    grid-area: logo1;\\n} */\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./public/component-styles/projectsPage.css?./node_modules/css-loader/dist/cjs.js");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./public/component-styles/wct.css":
 /*!*******************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./public/component-styles/wct.css ***!
@@ -897,6 +908,17 @@ eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/run
 
 /***/ }),
 
+/***/ "./public/component-styles/projectsPage.css":
+/*!**************************************************!*\
+  !*** ./public/component-styles/projectsPage.css ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./projectsPage.css */ \"./node_modules/css-loader/dist/cjs.js!./public/component-styles/projectsPage.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./public/component-styles/projectsPage.css?");
+
+/***/ }),
+
 /***/ "./public/component-styles/wct.css":
 /*!*****************************************!*\
   !*** ./public/component-styles/wct.css ***!
@@ -905,6 +927,30 @@ eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/run
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./wct.css */ \"./node_modules/css-loader/dist/cjs.js!./public/component-styles/wct.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./public/component-styles/wct.css?");
+
+/***/ }),
+
+/***/ "./public/eagleLake.png":
+/*!******************************!*\
+  !*** ./public/eagleLake.png ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"43d7c47fc4cbbd8b4ae55ee2a81c1f64.png\");\n\n//# sourceURL=webpack:///./public/eagleLake.png?");
+
+/***/ }),
+
+/***/ "./public/foodie.png":
+/*!***************************!*\
+  !*** ./public/foodie.png ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"5720f7b3faeacc5fe383ff07ebcdc9ce.png\");\n\n//# sourceURL=webpack:///./public/foodie.png?");
 
 /***/ }),
 
@@ -956,6 +1002,66 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./public/movieNight.png":
+/*!*******************************!*\
+  !*** ./public/movieNight.png ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"90852bc6b2890739d327d9d6b44bd5d7.png\");\n\n//# sourceURL=webpack:///./public/movieNight.png?");
+
+/***/ }),
+
+/***/ "./public/naturalEats.png":
+/*!********************************!*\
+  !*** ./public/naturalEats.png ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"7027f24d0c0717bc0ad6bcf6d3346570.png\");\n\n//# sourceURL=webpack:///./public/naturalEats.png?");
+
+/***/ }),
+
+/***/ "./public/projectOvernight.png":
+/*!*************************************!*\
+  !*** ./public/projectOvernight.png ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"0106e1cdf2fbf98d7fe041075bcda4ba.png\");\n\n//# sourceURL=webpack:///./public/projectOvernight.png?");
+
+/***/ }),
+
+/***/ "./public/scienceClass.png":
+/*!*********************************!*\
+  !*** ./public/scienceClass.png ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"754d1ca52acda8087d60298381cee673.png\");\n\n//# sourceURL=webpack:///./public/scienceClass.png?");
+
+/***/ }),
+
+/***/ "./public/solaris.png":
+/*!****************************!*\
+  !*** ./public/solaris.png ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"9bf62d3bf86bf8a36923ae84d0e6a0ed.png\");\n\n//# sourceURL=webpack:///./public/solaris.png?");
+
+/***/ }),
+
 /***/ "./public/twitter.png":
 /*!****************************!*\
   !*** ./public/twitter.png ***!
@@ -965,6 +1071,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"6b51a294343164b36f885ecd5ed9ad76.png\");\n\n//# sourceURL=webpack:///./public/twitter.png?");
+
+/***/ }),
+
+/***/ "./public/x-rsize.png":
+/*!****************************!*\
+  !*** ./public/x-rsize.png ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"7971d027b09b88c511a8b2fe985d05f4.png\");\n\n//# sourceURL=webpack:///./public/x-rsize.png?");
 
 /***/ })
 

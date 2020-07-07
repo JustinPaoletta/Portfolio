@@ -1,5 +1,14 @@
 import React, { useState } from 'react';
 import Hamburger from '../../public/hamburger.png';
+import Eagle from '../../public/eagleLake.png';
+import Xrsize from '../../public/x-rsize.png';
+import Natural from '../../public/naturalEats.png';
+import Movie from '../../public/movieNight.png';
+import Foodie from '../../public/foodie.png';
+import ProjectOvernight from '../../public/projectOvernight.png';
+import Solaris from '../../public/solaris.png';
+import Science from '../../public/scienceClass.png';
+import '../../public/component-styles/projectsPage.css';
 
 function ProjectsPage({ clickIt }) {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -34,7 +43,16 @@ function ProjectsPage({ clickIt }) {
         <p onClick={() => { clickIt('BLOG'); }}>Blog</p>
         <p onClick={() => { clickIt('CONTACT'); }}>Contact</p>
       </div>
-      <p>PROJECTS</p>
+      <div className="projectsContainer">
+        <img className="appLogos logo1" src={Eagle}></img>
+        <img className="appLogos logo2" src={Xrsize}></img>
+        <img className="appLogos logo3" src={Natural}></img>
+        <img className="appLogos logo4" src={Movie}></img>
+        <img className="appLogos logo5" src={Foodie}></img>
+        <img className="appLogos logo6" src={ProjectOvernight}></img>
+        <img className="appLogos logo7" src={Solaris}></img>
+        <img className="appLogos logo8" src={Science}></img>
+      </div>
     </div>
   );
 }

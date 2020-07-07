@@ -1,0 +1,23 @@
+.projectsContainer {
+    display: grid;
+    grid-template: 
+    'logo1 logo2 logo3 logo4'
+    'logo5 logo6 logo7 logo8';
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.projectsContainer img{
+    margin: 1rem;
+    border: 1px solid black;
+}
+
+.appLogos {
+    height:200px;
+   
+}
+
+/* .logo1 {
+    grid-area: logo1;
+} */
